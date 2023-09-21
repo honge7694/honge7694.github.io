@@ -100,29 +100,30 @@ class BlogPostSerializer(serializers.ModelSerializer):
 `Inner Join`에서 예시로 보여준 코드에서 `source='comment_set'`을 추가하여 `Left Outer Join`과 유사한 형태로 결과를 나타냅니다. `BlogPost`와 연결된 모든 댓글을 가져오며, 만약 게시물에 연관 된 댓글이 없다면 빈 리스트가 표시됩니다. 
 
 <details>
-<summary>serializers.SerializerMethodField()을 이용하기</summary>
+    <summary>serializers.SerializerMethodField()을 이용하기</summary>
+
 
 ```python
-from rest_framework import serializers
-from .models import BlogPost, Comment
+    from rest_framework import serializers
+    from .models import BlogPost, Comment
 
-class CommentSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Comment
-        fields = ['id', 'post', 'text']
+    class CommentSerializer(serializers.ModelSerializer):
+        class Meta:
+            model = Comment
+            fields = ['id', 'post', 'text']
 
-class BlogPostSerializer(serializers.ModelSerializer):
-    # SerializerMethodField를 사용하여 comments 필드를 추가
-    comments = serializers.SerializerMethodField()
+    class BlogPostSerializer(serializers.ModelSerializer):
+        # SerializerMethodField를 사용하여 comments 필드를 추가
+        comments = serializers.SerializerMethodField()
 
-    class Meta:
-        model = BlogPost
-        fields = ['id', 'title', 'content', 'comments']
+        class Meta:
+            model = BlogPost
+            fields = ['id', 'title', 'content', 'comments']
 
-    def get_comments(self, obj):
-        # BlogPost와 연관된 댓글들을 가져옵니다. (Left Outer Join)
-        comments = Comment.objects.filter(post=obj)
-        return CommentSerializer(comments, many=True).data
+        def get_comments(self, obj):
+            # BlogPost와 연관된 댓글들을 가져옵니다. (Left Outer Join)
+            comments = Comment.objects.filter(post=obj)
+            return CommentSerializer(comments, many=True).data
 ```
 
 </details>
