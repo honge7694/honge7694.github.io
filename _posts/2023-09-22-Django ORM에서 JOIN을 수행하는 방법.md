@@ -26,11 +26,11 @@ class Comment(models.Model):
 <br/>
 
 ## Inner Join - select_related()
->`select_related()`는 **1:1**, **1:N의 관계에서 N이 사용**할 수 있습니다.
-**정방향 참조**에서의 `Join`에 유리하게 사용됩니다.
-`Join`을 통해 데이터를 즉시 가져오는 방법 **(SQL 단계에서 `Join`)**
- `Inner Join`은 연결된 모든 데이터를 가져옵니다. 
-게시물에 댓글이 하나도 없으면 해당 게시물은 결과에 나타나지 않습니다.
+>`select_related()`는 **1:1**, **1:N의 관계에서 N이 사용**할 수 있습니다.   
+**정방향 참조**에서의 `Join`에 유리하게 사용됩니다.   
+`Join`을 통해 데이터를 즉시 가져오는 방법 **(SQL 단계에서 `Join`)**   
+ `Inner Join`은 연결된 모든 데이터를 가져옵니다.    
+게시물에 댓글이 하나도 없으면 해당 게시물은 결과에 나타나지 않습니다.   
 
 
 ### serializer에서 작성한 Inner Join
@@ -61,8 +61,9 @@ class CommentListAPIView(ListCreateAPIView):
 ```
 
 
-### Rsult
-```SQL
+### Result
+
+```sql
 SELECT "practice_comment"."id",
        "practice_comment"."post_id",
        "practice_comment"."text",
@@ -97,11 +98,11 @@ Vary: Accept
 <br/>
 
 ## Left Outer Join - prefetch_related()
-> `prefetch_related()`는 **1:N의 관계에서 1이 사용**할 수 있고, **M:N의 관계**에서 사용할 수 있습니다.
-**역방향 참조**에 유리하게 사용됩니다.
-추가 쿼리를 통해 데이터를 즉시 가져오는 방법입니다. **(추가 쿼리 발생, `Join`은 파이썬 level에서 이루어집니다.)**
+> `prefetch_related()`는 **1:N의 관계에서 1이 사용**, **M:N의 관계에서 사용**할 수 있습니다.   
+**역방향 참조**에 유리하게 사용됩니다.   
+추가 쿼리를 통해 데이터를 즉시 가져오는 방법입니다. **(추가 쿼리 발생, `Join`은 파이썬 level에서 이루어집니다.)**   
 `Left Outer Join`은 왼쪽(기본)테이블의 모든 데이터를 가져오며, 오른쪽(연결된)테이블과 
-관련된 데이터가 없는 경우에도 왼쪽 테이블의 데이터 결과에 포함시킵니다.
+관련된 데이터가 없는 경우에도 왼쪽 테이블의 데이터 결과에 포함시킵니다.  
  따라서 게시물에 댓글이 없어도 게시물은 결과에 나타납니다.
 
 ### serializer에서 작성한 Left Outer Join
@@ -171,7 +172,7 @@ class BlogPostListAPIView(ListCreateAPIView):
 ✔ 이러한 동작은 Left Outer Join과 유사하지만 Left Outer Join과는 약간 다를 수 있습니다.
 
 ### Result
-```SQL
+```sql
 SELECT "practice_comment"."id",
        "practice_comment"."post_id",
        "practice_comment"."text"
