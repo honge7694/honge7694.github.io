@@ -1,6 +1,6 @@
 ---
 title: Django ORM에서 Join을 수행하는 방법
-date: 2023-09-21 21:24:30 +09:00
+date: 2023-09-22 00:48:30 +09:00
 categories: [DevOps, Django]
 tags: [Django, ORM, JOIN]
 image: /assets/img/posts/image-202309220048.png
