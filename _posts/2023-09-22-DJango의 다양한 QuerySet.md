@@ -12,7 +12,7 @@ Django의 QuerySet은 데이터베이스에서 데이터를 조회, 필터링, �
 > 필드 조회는 SQL WHERE 절의 핵심을 지정하는 방법입니다.    이는 QuerySet 메소드 `filter()`, `exclude()` 및 `get()`에 대한 키워드 인수로 지정됩니다.
 
 ### exact, iexact - 일치
-> `exact` : 정확히 일치하는 데이터를 찾습니다.
+> `exact` : 정확히 일치하는 데이터를 찾습니다.   
 `iexact` : 대소문자를 구분하지 않고 일치하는 데이터를 찾습니다.
 값이 `None`이면, SQL `Null`로 해석됩니다.
 
