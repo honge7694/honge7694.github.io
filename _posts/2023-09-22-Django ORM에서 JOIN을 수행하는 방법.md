@@ -129,8 +129,9 @@ class BlogPostSerializer(serializers.ModelSerializer):
 `Inner Join`에서 예시로 보여준 코드에서 `source='comment_set'`을 추가하여 `Left Outer Join`과 유사한 형태로 결과를 나타냅니다. `BlogPost`와 연결된 모든 댓글을 가져오며, 만약 게시물에 연관 된 댓글이 없다면 빈 리스트가 표시됩니다. 
 
 <details>
-
 <summary>serializers.SerializerMethodField()을 이용하기</summary>
+
+<div markdown="1">
 
 ```python
 from rest_framework import serializers
@@ -154,7 +155,7 @@ class BlogPostSerializer(serializers.ModelSerializer):
         comments = Comment.objects.filter(post=obj)
         return CommentSerializer(comments, many=True).data
 ```
-
+</div>
 </details>
 
 ### view에서 작성한 Left Outer Join
