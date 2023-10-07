@@ -368,7 +368,7 @@ jsp 파일들이 위치하게 되는 폴더이다.
 main/java 폴더 및 패키지 생성
 java 폴더에는 클래스 파일들이, resources 폴더에는 DB(MyBatis)가 들어가게 된다.
 ![main/java 생성](https://github.com/honge7694/honge7694.github.io/assets/76715487/1a8d3348-5172-4150-a143-36835b7f9ebd)
-java 폴더에 package를 생성하는데, **servlet-context.xml에 설정한 패키지 이름으로 생성**한다.
+java 폴더에 package를 생성하는데, **servlet-context.xml에 설정한 패키지 이름으로 생성**한다.    
 여기서는 `com.hong.project1`으로 생성한다.
 
 ### 6. PACKAGE 및 컨트롤러 생성
