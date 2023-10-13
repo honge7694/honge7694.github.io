@@ -15,7 +15,7 @@ Spring Framework랑 다르게 정말 간단하고 빠르게 설정을 해줄 수
 [스프링 부트 세팅](https://start.spring.io/)
 
 #### 2. 아래와 같이 세팅
-> Java 17 버전부터 Spring Boot 버전 3.x를 사용하고, Java 11은 버전 2.x를 이용해야 에려가 나타나지 않는다.
+> Java 17 버전부터 Spring Boot 버전 3.x를 사용하고, Java 11은 버전 2.x를 이용해야 에러가 나타나지 않는다.
 
 ![start spring io 사용하기](https://github.com/honge7694/honge7694.github.io/assets/76715487/f8f4f77e-c73d-4e58-b5de-0ae63cea9ba4)
 
@@ -25,6 +25,7 @@ Spring Framework랑 다르게 정말 간단하고 빠르게 설정을 해줄 수
 
 #### 4. IntelliJ에서 실행
 ![IntelliJ에서 불러오기](https://github.com/honge7694/honge7694.github.io/assets/76715487/d238a416-c748-46f9-8f04-6c481dab157c)
+압축 해제한 파일을 불러오면 된다.
 
 #### 5. 빌드 완료 후 실행
 > http://localhost:8080/을 들어가서 확인해보자.
