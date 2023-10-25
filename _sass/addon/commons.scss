@@ -240,6 +240,7 @@ i {
     @include label(inherit);
   }
   
+  /* post-tag color */
   .post-tag {
     line-height: 1.05rem;
     font-size: 0.85rem;
@@ -251,7 +252,7 @@ i {
     &:hover {
       background-color: #2a408e;
       border-color: #2a408e;
-      color: #fff;
+      color: #ffffff;
       transition: all 0.3s ease-in;
     }
   }
