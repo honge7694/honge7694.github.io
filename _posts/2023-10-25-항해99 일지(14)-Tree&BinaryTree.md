@@ -26,6 +26,12 @@ image: /assets/img/posts/항해99.png
 |레벨(Level)|깊이를 기반으로, 동일한 깊이의 노드들을 레벨이라고 한다.|
 |깊이(Depth)|루트 노드에서 어떤 노드까지의 계층적 깊이를 나타낸다. |
 
+<div markdown="1">
+	<div style="display: flex; justify-content: space-between;">
+		<img src="https://github.com/honge7694/honge7694.github.io/assets/76715487/14b698f2-77ef-449c-b5ad-7716096e39ec" alt="이미지 1" width="50%" />
+		<img src="https://github.com/honge7694/honge7694.github.io/assets/76715487/2df9cc4c-87ec-413b-9454-d2f7881a2975" alt="이미지 2" width="50%" />
+	</div>
+</div> 
 
 ## 참고
 
