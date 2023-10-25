@@ -239,8 +239,7 @@ i {
   .panel-heading {
     @include label(inherit);
   }
-  
-  /* post-tag color */
+
   .post-tag {
     line-height: 1.05rem;
     font-size: 0.85rem;
