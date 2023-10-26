@@ -6,11 +6,10 @@ tags: [항해99, TIL, 자료구조, 이진 트리]
 image: /assets/img/posts/항해99.png
 ---
 
-
 ## 트리란?
 계층적인 구조를 나타내는 자료구조로, 순환하는 길이 없는 그래프로 정의한다. 트리는 다양한 종류와 형태가 있지만, 일반적으로 하나의 루트 노드에서 시작하여 각 노드들이 0개 이상의 자식 노드를 가질 수 있는 구조를 갖는다.
 
-![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/4b21698b-414a-4304-916e-e6ce781f6d7f)
+![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/557cdd34-6fc1-49c6-a98c-4e750eb58fae)
 
 #### 트리 용어
 
@@ -26,18 +25,6 @@ image: /assets/img/posts/항해99.png
 |서브 트리(SubTree)|트리에서 어떤 노드와 그 노드의 모든 자손 노드로 이루어진 트리를 카리킨다.|
 |레벨(Level)|깊이를 기반으로, 동일한 깊이의 노드들을 레벨이라고 한다. 루트는 0 부터 레벨을 갖는다.|
 |깊이(Depth)|루트 노드(depth=1)에서 어떤 노드까지의 계층적 깊이를 나타낸다.최대 수준 level + 1 |
-
-### 노드와 수준, 높이, 차수
-	
-![노드의 수준](https://github.com/honge7694/honge7694.github.io/assets/76715487/14b698f2-77ef-449c-b5ad-7716096e39ec)
-
-![노드의 높이](https://github.com/honge7694/honge7694.github.io/assets/76715487/2df9cc4c-87ec-413b-9454-d2f7881a2975)
-
-![노드의 차수](https://github.com/honge7694/honge7694.github.io/assets/76715487/512b0db4-a026-4084-86b7-01619f2b5c72)
-
-### 부분 트리
-
-![부분 트리](https://github.com/honge7694/honge7694.github.io/assets/76715487/80380d3b-5791-4493-8337-bed4010b4056)
 
 
 ## 이진 트리 (Binary Tree)
@@ -58,7 +45,57 @@ image: /assets/img/posts/항해99.png
 단, 마지막 레벨 k-1에 풀로 채워져 있지 않더라도 왼쪽부터 노드가 순차적으로 채워져 있다면
 완전 이진 트리이다.
 
+## 이진 트리 코드
 
+```python
+class Node:
+	def __init__(self, val, left=None, right=None):
+		self.val = val
+		self.left =left
+		self.right = right
+
+class Solution:
+	def __init__(self):
+		self.root = None
+		
+	def __str__(self):
+		if self.root:
+			return f"Solution (root={self.root.val})"
+		else:
+			return "Solution (no root)"
+			
+	def make_by_tree(self, lst, index):
+		parent = None
+		
+		if len(lst) > index:
+			value = lst[index]
+			
+			if value is None:
+				return
+			
+			parent = Node(value)
+			parent.left = self.make_by_tree(lst, 2 * index + 1)
+			parent.right = self.make_by_tree(lst, 2 * index + 2)
+			
+		if index == 0:
+			self.root = parent
+		
+		return parent
+	
+lst = [1, 2, 3, 4, 5]
+
+s1 = Solution()
+s1.make_by_tree(lst, 0)
+print(s1)
+
+```
+
+`parent.left = self.make_by_tree(lst, 2 * index + 1)`    
+`parent.right = self.make_by_tree(lst, 2 * index + 2)`     
+
+위 두개의 코드에 왜 left는 `index + 1` right는 `index + 2`가 붙냐면, 리스트 [1, 2, 3, None, None, 6, 7]이 있으면 아래의 그림처럼 되어 자식 노드는 부모 노드의 왼쪽이면 인덱스가  `2 * index + 1`, 오른쪽이면 인덱스가  `2* index + 2` 값을 갖기 때문에 위의 식이 나온다.
+
+![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/92d86dae-a6ab-4731-95a0-bbd0983db195)
 
 ## 참고
 
