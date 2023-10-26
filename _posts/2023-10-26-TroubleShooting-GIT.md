@@ -1,5 +1,5 @@
 ---
-title: [Git] fatal: You are not currently on a branch.
+title: "[Git] To push the history leading to the current (detached HEAD)"
 date: 2023-10-26 14:00:00 +09:00
 categories: [DevOps, Git]
 tags: [TIL, Git, TroubleShooting]
@@ -46,7 +46,7 @@ git checkout temp
 git branch -f main temp
 git checkout main
 ```
-이 명령을 실행하면 main 브랜치가 temp 브랜치의 가장 최신 커밋을 가리키도록 변경된다. 이것은 주로 브랜치를 다시 기준 브랜치로 설정하거나 특정 커밋 이후의 상태로 이동할 때 사용된다. 강제로 브랜치를 이동시키기 때문에 주의가 필요하며, 커밋을 잃을 수 있으므로 신중하게 사용해야 한다.
+위 명령을 실행하면 main 브랜치가 temp 브랜치의 가장 최신 커밋을 가리키도록 변경된다. 이것은 주로 브랜치를 다시 기준 브랜치로 설정하거나 특정 커밋 이후의 상태로 이동할 때 사용된다. 강제로 브랜치를 이동시키기 때문에 주의가 필요하며, 커밋을 잃을 수 있으므로 신중하게 사용해야 한다.
 
 ```shell
 D:\gitblog\git-blog>git checkout main

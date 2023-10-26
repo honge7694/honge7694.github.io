@@ -1,7 +1,7 @@
 ---
 title: 항해99 일지(14) - Tree & Binary Tree
 date: 2023-10-25 14:00:00 +09:00
-categories: [DevOps, TIL, DataStructure]
+categories: [DevOps, DataStructure, TIL]
 tags: [항해99, TIL, 자료구조, 이진 트리]
 image: /assets/img/posts/항해99.png
 ---
@@ -64,7 +64,7 @@ class Solution:
 		else:
 			return "Solution (no root)"
 			
-	def make_by_tree(self, lst, index):
+	def make_tree_by(self, lst, index):
 		parent = None
 		
 		if len(lst) > index:
@@ -74,8 +74,8 @@ class Solution:
 				return
 			
 			parent = Node(value)
-			parent.left = self.make_by_tree(lst, 2 * index + 1)
-			parent.right = self.make_by_tree(lst, 2 * index + 2)
+			parent.left = self.make_tree_by(lst, 2 * index + 1)
+			parent.right = self.make_tree_by(lst, 2 * index + 2)
 			
 		if index == 0:
 			self.root = parent
@@ -85,13 +85,12 @@ class Solution:
 lst = [1, 2, 3, 4, 5]
 
 s1 = Solution()
-s1.make_by_tree(lst, 0)
+s1.make_tree_by(lst, 0)
 print(s1)
-
 ```
 
-`parent.left = self.make_by_tree(lst, 2 * index + 1)`    
-`parent.right = self.make_by_tree(lst, 2 * index + 2)`     
+`parent.left = self.make_tree_by(lst, 2 * index + 1)`    
+`parent.right = self.make_tree_by(lst, 2 * index + 2)`     
 
 위 두개의 코드에 왜 left는 `index + 1` right는 `index + 2`가 붙냐면, 리스트 [1, 2, 3, None, None, 6, 7]이 있으면 아래의 그림처럼 되어 자식 노드는 부모 노드의 왼쪽이면 인덱스가  `2 * index + 1`, 오른쪽이면 인덱스가  `2* index + 2` 값을 갖기 때문에 위의 식이 나온다.
 
