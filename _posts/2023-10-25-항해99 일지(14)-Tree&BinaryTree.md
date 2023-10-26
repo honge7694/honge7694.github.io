@@ -27,23 +27,18 @@ image: /assets/img/posts/항해99.png
 |레벨(Level)|깊이를 기반으로, 동일한 깊이의 노드들을 레벨이라고 한다. 루트는 0 부터 레벨을 갖는다.|
 |깊이(Depth)|루트 노드(depth=1)에서 어떤 노드까지의 계층적 깊이를 나타낸다.최대 수준 level + 1 |
 
-<details>
-	<summary>노드의 수준, 높이, 차수</summary>
-
+### 노드와 수준, 높이, 차수
+	
 ![노드의 수준](https://github.com/honge7694/honge7694.github.io/assets/76715487/14b698f2-77ef-449c-b5ad-7716096e39ec)
 
 ![노드의 높이](https://github.com/honge7694/honge7694.github.io/assets/76715487/2df9cc4c-87ec-413b-9454-d2f7881a2975)
 
-![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/512b0db4-a026-4084-86b7-01619f2b5c72)
+![노드의 차수](https://github.com/honge7694/honge7694.github.io/assets/76715487/512b0db4-a026-4084-86b7-01619f2b5c72)
 
-</details>
+### 부분 트리
 
-<details>
-	<summary>부분 트리(서브 트리)</summary>
+![부분 트리](https://github.com/honge7694/honge7694.github.io/assets/76715487/80380d3b-5791-4493-8337-bed4010b4056)
 
-![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/80380d3b-5791-4493-8337-bed4010b4056)
-
-</details>
 
 ## 이진 트리 (Binary Tree)
 이진 트리(Binary Tree)는 계층 구조를 가지는 트리 자료 구조 중 하나로, 각 **노드가 최대 두개**의 자식 노드를 가질 수 있는 구조를 말한다. 이진 트리는 노드가 전혀 없는 빈 트리일 수도 있다. 즉, 노드가 없는 경우와 하나의 루트 노드만 있는 경우, 그리고 그 외에도 다양한 형태의 이진 트리가 존재한다.
