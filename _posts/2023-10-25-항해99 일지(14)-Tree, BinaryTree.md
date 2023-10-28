@@ -1,5 +1,5 @@
 ---
-title: "항해99 일지(14) - Tree, Binary Tree"
+title: "항해99 일지(14) - Tree & Binary Tree"
 date: 2023-10-25 14:00:00 +09:00
 categories: [DevOps, DataStructure, TIL]
 tags: [항해99, TIL, 자료구조, 이진 트리]
