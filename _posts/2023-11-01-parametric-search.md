@@ -1,6 +1,6 @@
 ---
 title: 파라메트릭 서치란?
-date: 2023-11-31 17:00:00 +09:00
+date: 2023-11-01 17:00:00 +09:00
 categories: [DevOps, Algorithm, TIL]
 tags: [항해99, TIL, parametric]
 image: /assets/img/posts/알고리즘.png
@@ -66,7 +66,7 @@ budget = 485
 print(search(cities, budget)) # 127
 ```
 
-위 문제는 파라메트릭 서치의 대표적인 문제 [백준 2805. 나무 자르기](https://www.acmicpc.net/problem/2805)이다. 
+위 문제는 파라메트릭 서치의 대표적인 문제 [백준 2512. 예산](https://www.acmicpc.net/problem/2512)이다. 
 코드를 보면 어렵다고 느껴지는 코드는 없다. 다만, if문으로 조건을 주는 부분과 for문 안을 문제 유형에 따라 어떻게 처리할지 다르다.
 이 부분을 좀 더 생각하면서 문제를 풀면 될 것이다.
 
