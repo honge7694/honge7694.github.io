@@ -1,5 +1,5 @@
 ---
-title: JAVA의 클래스와 객체
+title: "[자바 객체 지향의 원리와 이해] 3장 : 클래스 vs 객체"
 date: 2023-11-03 18:00:00 +09:00
 categories: [DevOps, Java]
 tags: [항해99, Java, 자바 객체 지향의 원리와 이해]
