@@ -1,7 +1,7 @@
 ---
 title: 항해99 일지(3) - 웹 미니 프로젝트 회고
 date: 2023-10-13 23:12:30 +09:00
-categories: [DevOps, TIL]
+categories: [IT, TIL]
 tags: [항해99, TIL, 미니 프로젝트, 회고]
 image: /assets/img/posts/항해99.png
 ---

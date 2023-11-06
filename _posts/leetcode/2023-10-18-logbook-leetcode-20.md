@@ -1,7 +1,7 @@
 ---
 title: 유효한 괄호 - leetcode 20번
 date: 2023-10-18 23:01:00 +09:00
-categories: [DevOps, Algorithm]
+categories: [IT, Algorithm]
 tags: [항해99, TIL, 알고리즘, Stack, leetcode]
 image: /assets/img/posts/알고리즘.png
 ---

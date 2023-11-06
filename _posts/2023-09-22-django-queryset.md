@@ -1,7 +1,7 @@
 ---
 title: Django의 다양한 QuerySet
 date: 2023-09-22 18:14:30 +09:00
-categories: [DevOps, Django]
+categories: [IT, Django]
 tags: [Django, QuerySet, filter]
 image: /assets/img/posts/image-202309221824.png
 ---

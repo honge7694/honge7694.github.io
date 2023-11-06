@@ -1,7 +1,7 @@
 ---
 title: Spring Boot 시작하기
 date: 2023-10-10 21:30:00 +09:00
-categories: [DevOps, Spring, TIL]
+categories: [IT, Spring, TIL]
 tags: [Spring Boot, 환경설정, 프로젝트 시작, start.spring.io, spring-boot-devtools, spring-boot배포]
 image: /assets/img/posts/Spring Boot 시작하기.png
 ---

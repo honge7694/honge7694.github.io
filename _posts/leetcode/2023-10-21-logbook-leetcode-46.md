@@ -1,7 +1,7 @@
 ---
 title: 순열 - leetcode 46번
 date: 2023-10-21 23:02:00 +09:00
-categories: [DevOps, Algorithm]
+categories: [IT, Algorithm]
 tags: [알고리즘, DFS, leetcode]
 image: /assets/img/posts/알고리즘.png
 ---

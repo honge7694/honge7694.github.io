@@ -1,7 +1,7 @@
 ---
 title: 암호만들기 - baekjoon 1759번
 date: 2023-10-24 19:02:00 +09:00
-categories: [DevOps, Algorithm]
+categories: [IT, Algorithm]
 tags: [항해99, 알고리즘, 백트래킹, baekjoon]
 image: /assets/img/posts/알고리즘.png
 ---

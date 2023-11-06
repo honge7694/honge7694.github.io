@@ -1,7 +1,7 @@
 ---
 title: 카드2 - baekjoon 2164번
 date: 2023-10-19 23:04:00 +09:00
-categories: [DevOps, Algorithm]
+categories: [IT, Algorithm]
 tags: [항해99, TIL, 알고리즘, Queue, baekjoon]
 image: /assets/img/posts/알고리즘.png
 ---
