@@ -156,7 +156,7 @@ public String createSession(HttpServletRequest req) {
 }
 ```
 
-+ `HttpSedrvletRequest`를 사용하여 세션을 생성 및 반환 한다.
++ `HttpServletRequest`를 사용하여 세션을 생성 및 반환 한다.
 + `req.getSession(true)`
 	+ 세션이 존재할 경우 세션을 반환하고 없을 경우 새로운 세션을 생성한다.
 + `req.getSession(false)`
