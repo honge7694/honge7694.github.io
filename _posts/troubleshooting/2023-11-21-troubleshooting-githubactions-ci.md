@@ -22,3 +22,10 @@ Git Action을 이용한 CI 테스트 중에 아래와 같은 에러가 발생했
 ```bash
  git update-index --chmod=+x gradlew
 ```
+
+## 해결2
+다른 방법으로는 gradle.yml의 steps부분에 아래와 같이 작성하는 방법도 있다.
+```
+	- name: Grant execute permission for gradlew
+	run: chmod +x gradlew
+```
