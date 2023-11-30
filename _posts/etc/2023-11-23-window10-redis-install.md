@@ -41,16 +41,16 @@ D:\Program Files\Redis> .\redis-server.exe redis.windows.conf
 
 #### 2. 서버 확인
 
-![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/845202f5-465d-424f-b685-e5cb4634d29c)
+![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/845202f5-465d-424f-b685-e5cb4634d29c)    
 
 <br/>
 
-기동중인 상태가 확인이 되었다면 설치 파일로 들어가서 redis-cli.exe를 실행한다.
+기동중인 상태가 확인이 되었다면 설치 파일로 들어가서 redis-cli.exe를 실행한다.    
 이것을 시작하기전에 redis-server.exe를 한번 눌러주자.
 
 <br/>
 
-![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/cac062dc-fbad-4500-86e8-df4274aba68a)
+![image2](https://github.com/honge7694/honge7694.github.io/assets/76715487/cac062dc-fbad-4500-86e8-df4274aba68a)    
 
 <br/>
 
