@@ -2,8 +2,8 @@
 title: 1, 2, 3 더하기 - baekjoon 9095번
 date: 2023-10-24 19:01:00 +09:00
 categories: [IT, Algorithm]
-tags: [항해99, 알고리즘, 백트래킹, baekjoon]
-image: /assets/img/posts/알고리즘.png
+tags: [항해99, algorithm.png, 백트래킹, baekjoon]
+image: /assets/img/posts/algorithm.png.png
 ---
 
 ## [9095. 1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)

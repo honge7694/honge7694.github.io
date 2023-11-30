@@ -3,7 +3,7 @@ title: 항해99 일지(6) - LinkedList
 date: 2023-10-17 23:00:00 +09:00
 categories: [IT, DataStructure, TIL]
 tags: [항해99, TIL, 자료구조, LikedList]
-image: /assets/img/posts/항해99.png
+image: /assets/img/posts/logbook99.png
 ---
 
 LinkedList의 종류는 단일 연결 리스트, 이중 연결 리스트말고도 있지만 오늘은 단일 연결 리스트와 이중 연결 리스트부터 정리하려고 한다. 이론을 습득하고, 전체 코드를 연습한 뒤, 다양한 삽입, 삭제 코드를 직접 짜보면 이해가 쉽게된다.

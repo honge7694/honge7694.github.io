@@ -3,7 +3,7 @@ title: "Spring - React CORS 문제 해결(28)"
 date: 2023-11-25 23:00:00 +09:00
 categories: [IT, 항해99, TroubleShooting]
 tags: [TIL, 항해99, TroubleShooting]
-image: /assets/img/posts/TroubleShooting.png
+image: /assets/img/posts/troubleshooting.png
 ---
 
 

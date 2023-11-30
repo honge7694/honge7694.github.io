@@ -3,14 +3,14 @@ title: 의존성 주입을 알아보자
 date: 2023-10-06 23:12:30 +09:00
 categories: [IT, TIL, Spring]
 tags: [TIL, Spring, DI]
-image: /assets/img/posts/Dependency Injection.png
+image: /assets/img/posts/dependency-injection.png
 ---
 
 오늘은 항해99 강의를 듣다가 Spring 강의를 봤다.    
 스프링을 급하게 배우는 것보다 미리 조금씩 해보는게 낫다 생각하였다.    
 항해99 강의는 내일 듣거나 일요일에 몰아 들어야겠다..   
     
-Spring 기본 기능 구현 강의를 보면서 개념을 파악하고있는데, 잘 이해가 가지 않는 것들이 많은데 오늘은 무슨 말인지 몰랐지만 자주 나오는 **의존성 주입(Dependency Injection, DI)**에 대해서 정리를 해봐야겠다.
+Spring 기본 기능 구현 강의를 보면서 개념을 파악하고있는데, 잘 이해가 가지 않는 것들이 많은데 오늘은 무슨 말인지 몰랐지만 자주 나오는 **의존성 주입(dependency-injection, DI)**에 대해서 정리를 해봐야겠다.
 
 
 ## DI란?

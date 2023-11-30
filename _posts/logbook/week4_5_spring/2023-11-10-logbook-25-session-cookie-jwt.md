@@ -3,7 +3,7 @@ title: 항해99 일지(25) - SpringBoot Cookie, Session, JWT
 date: 2023-11-10 14:00:00 +09:00
 categories: [IT, Spring, TIL]
 tags: [Spring Boot, session, cookie, jwt]
-image: /assets/img/posts/Spring Boot 시작하기.png
+image: /assets/img/posts/spring-boot-start.png
 ---
 
 ## 인증과 인가
@@ -208,7 +208,7 @@ JWT 기반 인증은 쿠키/세션 방식과 유사하게 JWT 토큰(Access Toke
 3. JWT 생성
 	+ 서버는 사용자 정보와 함께 JWT를 생성한다.
 	+ JWT는 Header, Payload, Signature 세 부분으로 구성되어 있다.
-		+ Header: 토큰의 타입과 사용된 해시 알고리즘 정보를 포함한다.
+		+ Header: 토큰의 타입과 사용된 해시 algorithm.png 정보를 포함한다.
 		+ Payload: 사용자 정보가 포함되며, 여기에는 사용자 아이디, 권한 등이 들어간다.
 		+ Signature: Header와 Payload를 암호화한 값으로, 서버가 생성한 비밀 키로 검증된다.
 
@@ -333,7 +333,7 @@ public String createToken(String username, UserRoleEnum role) {
                     .claim(AUTHORIZATION_KEY, role) // 사용자 권한
                     .setExpiration(new Date(date.getTime() + TOKEN_TIME)) // 만료 시간
                     .setIssuedAt(date) // 발급일
-                    .signWith(key, signatureAlgorithm) // 암호화 알고리즘
+                    .signWith(key, signatureAlgorithm) // 암호화 algorithm.png
                     .compact();
 }
 ```
@@ -538,7 +538,7 @@ public class JwtUtil {
                         .claim(AUTHORIZATION_KEY, role) // 사용자 권한
                         .setExpiration(new Date(date.getTime() + TOKEN_TIME)) // 만료 시간
                         .setIssuedAt(date) // 발급일
-                        .signWith(key, signatureAlgorithm) // 암호화 알고리즘
+                        .signWith(key, signatureAlgorithm) // 암호화 algorithm.png
                         .compact();
     }
 

@@ -3,7 +3,7 @@ title: "[AWS] RDS Connection timed out 연결 오류 해결"
 date: 2023-11-21 23:00:00 +09:00
 categories: [IT, AWS]
 tags: [TIL, AWS, TroubleShooting]
-image: /assets/img/posts/TroubleShooting.png
+image: /assets/img/posts/troubleshooting.png
 ---
 
 ## 에러

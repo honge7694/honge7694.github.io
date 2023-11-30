@@ -3,7 +3,7 @@ title: Windows 10 환경 Redis 설치
 date: 2023-11-23 18:00:00 +09:00
 categories: [IT, Redis]
 tags: [TIL, Redis]
-image: /assets/img/posts/TroubleShooting.png
+image: /assets/img/posts/redis.png
 ---
 
 
@@ -42,9 +42,18 @@ D:\Program Files\Redis> .\redis-server.exe redis.windows.conf
 #### 2. 서버 확인
 
 ![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/845202f5-465d-424f-b685-e5cb4634d29c)
+
+<br/>
+
 기동중인 상태가 확인이 되었다면 설치 파일로 들어가서 redis-cli.exe를 실행한다.
 이것을 시작하기전에 redis-server.exe를 한번 눌러주자.
+
+<br/>
+
 ![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/cac062dc-fbad-4500-86e8-df4274aba68a)
+
+<br/>
+
 위와 같이 ping을 보냈을 때 PONG이 온다면 정상적으로 실행 중인것이다.
 
 

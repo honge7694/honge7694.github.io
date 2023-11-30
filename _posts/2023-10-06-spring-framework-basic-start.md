@@ -3,7 +3,7 @@ title: Spring Framework 시작하기
 date: 2023-10-06 15:30:00 +09:00
 categories: [IT, Spring]
 tags: [Spring, 환경설정, 프로젝트 시작]
-image: /assets/img/posts/Spring 시작하기.png
+image: /assets/img/posts/spring-framework-start.png
 ---
 
 

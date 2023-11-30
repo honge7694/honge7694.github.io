@@ -2,8 +2,8 @@
 title: 큐를 이용한 스택 구현 - leetcode 225번
 date: 2023-10-19 23:01:00 +09:00
 categories: [IT, Algorithm]
-tags: [항해99, TIL, 알고리즘, Queue, Stack, leetcode]
-image: /assets/img/posts/알고리즘.png
+tags: [항해99, TIL, algorithm.png, Queue, Stack, leetcode]
+image: /assets/img/posts/algorithm.png.png
 ---
 
 ## [225. 큐를 이용한 스택 구현](https://leetcode.com/problems/implement-stack-using-queues/description/)

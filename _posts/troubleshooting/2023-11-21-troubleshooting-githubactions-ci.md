@@ -3,7 +3,7 @@ title: "[GIT] Error: Gradle script '/home/runner/work/~/gradlew' is not executab
 date: 2023-11-21 16:00:00 +09:00
 categories: [IT, Git]
 tags: [TIL, Git, TroubleShooting]
-image: /assets/img/posts/TroubleShooting.png
+image: /assets/img/posts/troubleshooting.png
 ---
 
 ## 에러

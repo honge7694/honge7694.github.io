@@ -3,7 +3,7 @@ title: 항해99 일지(8) - Queue
 date: 2023-10-19 23:00:00 +09:00
 categories: [IT, DataStructure, TIL]
 tags: [항해99, TIL, 자료구조, Queue]
-image: /assets/img/posts/항해99.png
+image: /assets/img/posts/logbook99.png
 ---
 
 ## Queue
