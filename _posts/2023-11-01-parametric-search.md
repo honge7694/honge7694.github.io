@@ -2,13 +2,13 @@
 title: 파라메트릭 서치란?
 date: 2023-11-01 17:00:00 +09:00
 categories: [IT, DataStructure, Algorithm, TIL]
-tags: [항해99, TIL, algorithm.png 이론, parametric]
-image: /assets/img/posts/algorithm.png.png
+tags: [항해99, TIL, algorithm-1.png 이론, parametric]
+image: /assets/img/posts/algorithm-1.png.png
 ---
 
 
 ## 파라메트릭 서치(Parametric Search)
-파라메트릭 서치는 **최적화 문제를 결정 문제**로 변환하여 해결하는 algorithm.png 기법이다. 이것을 쉽게 말하면 구하고자 하는 값의 범위가 주어질 때, 그 중 하나의 값을 하나 잡고 조건을 만족하는지 묻는 것이다. 파라메트릭 서치는 **이진 탐색과 연관이 깊어 이진 탐색을 기반**으로 하면서도 다양한 응용 분야에서 활용된다. 시간 복잡도는 O(log n)이다.
+파라메트릭 서치는 **최적화 문제를 결정 문제**로 변환하여 해결하는 algorithm-1.png 기법이다. 이것을 쉽게 말하면 구하고자 하는 값의 범위가 주어질 때, 그 중 하나의 값을 하나 잡고 조건을 만족하는지 묻는 것이다. 파라메트릭 서치는 **이진 탐색과 연관이 깊어 이진 탐색을 기반**으로 하면서도 다양한 응용 분야에서 활용된다. 시간 복잡도는 O(log n)이다.
 
 ### 파라메트릭 서치의 핵심 개념
 
@@ -23,7 +23,7 @@ image: /assets/img/posts/algorithm.png.png
 + 예를 들어, "주어진 높이 `h`로 나무를 자르면 `M`미터를 얻을 수 있나?"와 같은 질문이 결정문제이다.
 
 #### 이진 탐색(Binary Search)
-+ 파라메트릭 서치에서 주로 사용되는 algorithm.png이다.
++ 파라메트릭 서치에서 주로 사용되는 algorithm-1.png이다.
 + 파라메터 값의 범위를 반복적으로 이진 탐색을 통해 줄여나가면서 최적 값을 찾는다.
 + 파라메터 값의 범위가 넓고 연속적인 경우, 이진 탐색을 사용하여 효율적으로 파라메터 공간을 탐색한다.
 

@@ -3,7 +3,7 @@ title: "[Git] To push the history leading to the current (detached HEAD)"
 date: 2023-10-26 14:00:00 +09:00
 categories: [IT, Git]
 tags: [TIL, Git, TroubleShooting]
-image: /assets/img/posts/troubleshooting.png
+image: /assets/img/posts/trouble-shooting.png
 ---
 
 

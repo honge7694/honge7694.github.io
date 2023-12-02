@@ -2,8 +2,8 @@
 title: 중복문자 제거 - leetcode 316번
 date: 2023-10-18 23:02:00 +09:00
 categories: [IT, Algorithm]
-tags: [항해99, TIL, algorithm.png, Stack, leetcode]
-image: /assets/img/posts/algorithm.png.png
+tags: [항해99, TIL, algorithm-1.png, Stack, leetcode]
+image: /assets/img/posts/algorithm-1.png.png
 ---
 
 ## [316. 중복문자 제거(Remove Duplicate Letters)](https://leetcode.com/problems/remove-duplicate-letters/description/)
