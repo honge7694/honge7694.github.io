@@ -3,7 +3,7 @@ title: 괄호 - baekjoon 9012번
 date: 2023-10-18 23:04:00 +09:00
 categories: [IT, Algorithm]
 tags: [항해99, TIL, algorithm-1.png, Stack, for-else, baekjoon]
-image: /assets/img/posts/algorithm-1.png.png
+image: /assets/img/posts/algorithm-1.png
 ---
 
 ## [9012. 괄호](https://www.acmicpc.net/problem/9012)

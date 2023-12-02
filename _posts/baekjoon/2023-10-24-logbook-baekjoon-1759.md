@@ -3,7 +3,7 @@ title: 암호만들기 - baekjoon 1759번
 date: 2023-10-24 19:02:00 +09:00
 categories: [IT, Algorithm]
 tags: [항해99, algorithm-1.png, 백트래킹, baekjoon]
-image: /assets/img/posts/algorithm-1.png.png
+image: /assets/img/posts/algorithm-1.png
 ---
 
 ## [1759. 암호 만들기](https://www.acmicpc.net/problem/1759)

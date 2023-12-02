@@ -3,7 +3,7 @@ title: 일일온도 - leetcode 739번
 date: 2023-10-18 23:03:00 +09:00
 categories: [IT, Algorithm]
 tags: [항해99, TIL, algorithm-1.png, Stack, leetcode]
-image: /assets/img/posts/algorithm-1.png.png
+image: /assets/img/posts/algorithm-1.png
 ---
 
 ## [739. 일일온도(Daily Temperatures)](https://leetcode.com/problems/daily-temperatures/description/)
