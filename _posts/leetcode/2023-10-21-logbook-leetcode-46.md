@@ -2,7 +2,7 @@
 title: 순열 - leetcode 46번
 date: 2023-10-21 23:02:00 +09:00
 categories: [IT, Algorithm]
-tags: [algorithm-1.png, DFS, leetcode]
+tags: [algorithm, DFS, leetcode]
 image: /assets/img/posts/algorithm-1.png
 ---
 

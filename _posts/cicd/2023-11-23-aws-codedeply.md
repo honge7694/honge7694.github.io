@@ -1,8 +1,8 @@
 ---
-title: "[AWS] CodeDeploy 생성"
+title: "CodeDeploy 생성"
 date: 2023-11-23 23:03:00 +09:00
-categories: [IT, AWS]
-tags: [TIL, AWS]
+categories: [IT, AWS, CI/CD]
+tags: [TIL, AWS, CI/CD, Github Actions]
 image: /assets/img/posts/aws.png
 ---
 
@@ -19,7 +19,7 @@ CodeDeploy와 연계하기 위해 저번에 생성한 [EC2](https://honge7694.gi
 
 #### 2. 태그 생성
 
-![12dacfd66da5c2e3d18f79e0d1cdf29d.png](:/480fdd56457a4bdb9d4aea23bb882bb7)
+![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/2ebc0888-6d56-4d13-8065-121098c2efc1)
 
 키의 이름과 값을 넣어준다.
 
@@ -65,8 +65,7 @@ IAM 페이지로 이동한다.
 
 
 
-
-### S3 생성
+### 3. S3 생성
 빌드한 프로젝트를 압축해서 이 버킷에 저장을 해준다. 이후 ec2 에서 버킷 내부에있는 파일을 가져와 사용할 수 있다.
 
 #### 1. S3 서비스로 이동
@@ -81,9 +80,6 @@ AWS의 서비스 S3로 이동하여 버킷 만들기를 눌러준다.
 
 사각형을 입력한 곳만 변경하고 모두 default이다.    
 bucket 이름은 다른 사람들이 사용하고 있을 수 있으므로 고유한 이름을 지어줘야한다.
-
-
-
 
 
 ## CodeDeploy 생성 준비

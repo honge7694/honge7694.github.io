@@ -1,8 +1,8 @@
 ---
-title: "[AWS] EC2 생성"
+title: "EC2 생성"
 date: 2023-11-23 23:00:00 +09:00
-categories: [IT, AWS]
-tags: [TIL, AWS]
+categories: [IT, AWS, CI/CD]
+tags: [TIL, AWS, CI/CD, Github Actions]
 image: /assets/img/posts/aws.png
 ---
 

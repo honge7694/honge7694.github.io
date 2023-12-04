@@ -1,8 +1,8 @@
 ---
-title: "[AWS] EC2 & 탄력적 IP"
+title: "EC2 & 탄력적 IP"
 date: 2023-11-23 23:01:00 +09:00
-categories: [IT, AWS]
-tags: [TIL, AWS]
+categories: [IT, AWS, CI/CD]
+tags: [TIL, AWS, CI/CD, Github Actions]
 image: /assets/img/posts/aws.png
 ---
 
