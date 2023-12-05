@@ -11,7 +11,7 @@ image: /assets/img/posts/aws.png
 ### 1. 지역 변경
 EC2에서 지역을 서울로 변경합니다.
 
-![EC2 지역 변경.png](:/2e0c38ba459342a1bc0f9811f4cb61e8)
+![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/226fbeb7-3c83-4aa8-b7c1-9de3f0bff968)
 
 
 ### 2. 인스턴스 시작

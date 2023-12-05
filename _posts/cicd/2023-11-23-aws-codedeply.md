@@ -54,12 +54,12 @@ IAM 페이지로 이동한다.
 
 #### 5. EC2 이동 후 IAM 역할 수정 이동
 
-![47ecbee72ae15f6964287e5804d22082.png](:/276d28c2f73f47dd8ced373de1bd7f5a)
+![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/14b9f92a-612f-483f-9118-7bf25c281069)
 
 
 #### 6. IAM 역할 수정 후 저장
 
-![421149a3a897ccbc0d99e213d45b93ac.png](:/84a7837fae2543c69ac1f5b423a98845)
+![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/d137a0a9-8879-4254-867a-391e146b04c3)
 
 저장을 눌러준다.
 
@@ -99,7 +99,7 @@ $ sudo service codedeploy-agent status
 
 경로 확인을 꼭 해야한다.
 
-![489f468f3bbb40cdb5f5c1ab7e5f903a.png](:/709bac63d276431d847c073f2b1581b0)
+![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/3151305b-a11f-4ac7-b352-8753fc151687)
 
 위와 같이 나온다면 성공이다.
 
@@ -121,8 +121,7 @@ $ sudo service codedeploy-agent status
 
 ### 2. 애플리케이션 생성
 
-![b65b80efb035af001beaa48c93d5c56c.png](:/d116ec354fd34bee8759bc35edb6cf97)
-
+![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/8db6b1e4-0cc3-4aa7-81e1-7bb20bc322cc)
 
 ### 3. 배포 그룹
 
