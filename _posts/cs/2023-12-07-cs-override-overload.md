@@ -3,7 +3,7 @@ title: "Override & Overload"
 date: 2023-12-07 18:00:00 +09:00
 categories: [IT, CS]
 tags: [TIL, Override, Overload, CS]
-image: /assets/img/posts/CS.png
+image: /assets/img/posts/cs.png
 ---
 
 ## Override와 Overload
