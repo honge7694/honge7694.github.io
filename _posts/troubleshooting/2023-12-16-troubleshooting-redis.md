@@ -1,9 +1,9 @@
 ---
 title: "[AWS & Redis] Error creating bean with name 'redissonLockTicketFacade' defined in URL"
-date: 2023-12-16 18:01:00 +09:00
+date: 2023-12-16 18:02:00 +09:00
 categories: [IT, TroubleShooting, Redis]
 tags: [TIL, TroubleShooting, Redis]
-image: /assets/img/posts/TroubleShooting.png
+image: /assets/img/posts/troubleShooting.png
 ---
 
 티켓 예매 프로젝트에 Redis를 이용한 동시성 제어를 추가하면서 ec2에 redis가 필요해졌다.    
