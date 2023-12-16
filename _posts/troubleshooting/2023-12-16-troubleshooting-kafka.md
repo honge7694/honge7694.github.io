@@ -1,7 +1,7 @@
 ---
 title: "[Kafka] Exception in thread 'main' joptsimple.UnrecognizedOptionException: zookeeper is not a recognized option"
 date: 2023-12-16 18:00:00 +09:00
-categories: [IT, Kafka]
+categories: [IT, Kafka, TroubleShooting]
 tags: [TIL, kafka, TroubleShooting]
 image: /assets/img/posts/TroubleShooting.png
 ---
