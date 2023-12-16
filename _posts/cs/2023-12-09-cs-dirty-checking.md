@@ -3,7 +3,7 @@ title: "JPA의 더티 체킹이란?"
 date: 2023-12-09 18:00:00 +09:00
 categories: [IT, CS]
 tags: [TIL, JPA 더티 체킹, CS]
-image: /assets/img/posts/CS.png
+image: /assets/img/posts/cs.png
 ---
 
 ## 더티 체킹이란??

@@ -3,7 +3,7 @@ title: 항해99 일지(31) - Final Project Start
 date: 2023-12-04 18:00:00 +09:00
 categories: [DevOps, WIL]
 tags: [항해99, WIL]
-image: /assets/img/posts/항해99.png
+image: /assets/img/posts/logbook99.png
 ---
 
 ## Final Project 시작
