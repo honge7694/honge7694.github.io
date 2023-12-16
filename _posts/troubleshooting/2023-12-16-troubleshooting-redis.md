@@ -3,7 +3,7 @@ title: "[AWS & Redis] Error creating bean with name 'redissonLockTicketFacade' d
 date: 2023-12-16 18:02:00 +09:00
 categories: [IT, TroubleShooting, Redis]
 tags: [TIL, TroubleShooting, Redis]
-image: /assets/img/posts/troubleShooting.png
+image: /assets/img/posts/trouble-shooting.png
 ---
 
 티켓 예매 프로젝트에 Redis를 이용한 동시성 제어를 추가하면서 ec2에 redis가 필요해졌다.    
@@ -27,7 +27,7 @@ docker-compose.green.yml, docker-compose.blue.yml에 각각 redis를 생성하�
 이 방법을 2번째로 시작했는데, 이 방법으로해도 에러가 해결되지 않았었다. 왜 에러가 해결되지 않았는지는 해결 부분에 있다. 
 
 ### 3. green/blue와 함께 redis 배포
-다음은 redis-compose.yml을 작성하여 redis가 ci/cd를 하며 함께 올라간 docker-compose.green.yml 과 docker-compose.blue.yml이랑 함께 서버에 올라간 후 depends_on으로 종속된 redis를 이용한다고 착각했다.    
+다음은 redis-compose.yml을 작성하여 redis가 ci/cd를 하며 함께 올라간 docker-compose.green.yml 과 docker-compose.blue.yml이랑 함께 서버에 올라간 후 depends_on으로 종속된 redis를 이용한다고 착각했다.
 
 <br/>
 

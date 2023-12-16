@@ -3,7 +3,7 @@ title: "[Kafka] Exception in thread 'main' joptsimple.UnrecognizedOptionExceptio
 date: 2023-12-16 18:00:00 +09:00
 categories: [IT, Kafka, TroubleShooting]
 tags: [TIL, kafka, TroubleShooting]
-image: /assets/img/posts/TroubleShooting.png
+image: /assets/img/posts/trouble-shooting.png
 ---
 
 ## 발생 원인
