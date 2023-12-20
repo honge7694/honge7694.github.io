@@ -2,7 +2,7 @@
 title: "@Value와 Environment"
 date: 2023-12-17 18:00:00 +09:00
 categories: [IT, Spring, TIL]
-tags: [SpringBoot, @Value, Environment]
+tags: [SpringBoot, "@Value", Environment]
 image: /assets/img/posts/TIL.png
 ---
 
