@@ -3,7 +3,7 @@ title: 카드2 - baekjoon 2164번
 date: 2023-10-19 23:04:00 +09:00
 categories: [IT, Algorithm]
 tags: [항해99, TIL, algorithm, Queue, baekjoon]
-image: /assets/img/posts/algorithm-1.png
+image: /assets/img/posts/algorithm.png
 ---
 
 ## [2164. 카드2](https://www.acmicpc.net/problem/2164)

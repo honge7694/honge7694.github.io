@@ -3,7 +3,7 @@ title: 암호만들기 - baekjoon 1759번
 date: 2023-10-24 19:02:00 +09:00
 categories: [IT, Algorithm]
 tags: [항해99, algorithm, 백트래킹, baekjoon]
-image: /assets/img/posts/algorithm-1.png
+image: /assets/img/posts/algorithm.png
 ---
 
 ## [1759. 암호 만들기](https://www.acmicpc.net/problem/1759)
@@ -80,7 +80,7 @@ print(len(result))
 2. 암호에는 모음 1개 이상, 자음 2개 이상으로 이루어져 있다.
 
 백트래킹
-1. 백트래킹 algorithm-1.png을 사용하여 알파벳이 증가하는 순서로 암호를 생성한다.
+1. 백트래킹 알고리즘을 사용하여 알파벳이 증가하는 순서로 암호를 생성한다.
 2. 암호문의 길이가 L이 되면 자음과 모음 개수를 확인한다.
 3. 조건이 맞으면 암호문을 출력한다.
 

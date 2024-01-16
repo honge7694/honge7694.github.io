@@ -3,7 +3,7 @@ title: 유효한 괄호 - leetcode 20번
 date: 2023-10-18 23:01:00 +09:00
 categories: [IT, Algorithm]
 tags: [항해99, TIL, algorithm, Stack, leetcode]
-image: /assets/img/posts/algorithm-1.png
+image: /assets/img/posts/algorithm.png
 ---
 
 ## 20. 유효한 괄호 (Valid Parentheses)

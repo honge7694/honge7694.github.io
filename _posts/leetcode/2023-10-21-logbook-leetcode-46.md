@@ -3,7 +3,7 @@ title: 순열 - leetcode 46번
 date: 2023-10-21 23:02:00 +09:00
 categories: [IT, Algorithm]
 tags: [algorithm, DFS, leetcode]
-image: /assets/img/posts/algorithm-1.png
+image: /assets/img/posts/algorithm.png
 ---
 
 이 문제는 [DFS](https://honge7694.github.io/posts/%ED%95%AD%ED%95%B499-%EC%9D%BC%EC%A7%80(10)-DFS/)정리한 후 풀려했지만 잘 안풀려서 계속해서 복습하고 작성하는 글이다.
