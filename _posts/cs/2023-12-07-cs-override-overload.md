@@ -2,7 +2,7 @@
 title: "Override & Overload"
 date: 2023-12-07 18:00:00 +09:00
 categories: [IT, CS]
-tags: [til, override, overload, CS]
+tags: [til, override, overload, cs]
 image: /assets/img/posts/cs.png
 ---
 

@@ -2,7 +2,7 @@
 title: "JPA의 더티 체킹이란?"
 date: 2023-12-09 18:00:00 +09:00
 categories: [IT, CS]
-tags: [til, jpa dirty checking, CS]
+tags: [til, jpa dirty checking, cs]
 image: /assets/img/posts/cs.png
 ---
 
