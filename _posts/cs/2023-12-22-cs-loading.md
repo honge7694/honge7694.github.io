@@ -2,7 +2,7 @@
 title: "즉시로딩과 지연로딩은 언제 사용하면 좋을까?"
 date: 2023-12-22 18:00:00 +09:00
 categories: [IT, CS]
-tags: [TIL, CS, 즉시 로딩, 지연 로딩]
+tags: [til, cs, 즉시 로딩, 지연 로딩]
 image: /assets/img/posts/cs.png
 ---
 

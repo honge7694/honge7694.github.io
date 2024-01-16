@@ -2,7 +2,7 @@
 title: "Java Map의 내부 구현"
 date: 2023-12-16 18:00:00 +09:00
 categories: [IT, CS]
-tags: [TIL, CS, Java Map]
+tags: [til, cs, java map]
 image: /assets/img/posts/cs.png
 ---
 

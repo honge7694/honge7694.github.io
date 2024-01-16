@@ -2,7 +2,7 @@
 title: "N+1 문제의 발생 이유와 해결 방법"
 date: 2023-12-21 18:00:00 +09:00
 categories: [IT, CS]
-tags: [TIL, CS, N+1 문제]
+tags: [til, cs, n+1]
 image: /assets/img/posts/cs.png
 ---
 

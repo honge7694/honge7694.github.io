@@ -2,7 +2,7 @@
 title: 중복문자 제거 - leetcode 316번
 date: 2023-10-18 23:02:00 +09:00
 categories: [IT, Algorithm]
-tags: [항해99, TIL, algorithm, Stack, leetcode]
+tags: [항해99, til, algorithm, stack, leetcode]
 image: /assets/img/posts/algorithm.png
 ---
 

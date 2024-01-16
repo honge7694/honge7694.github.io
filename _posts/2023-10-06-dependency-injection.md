@@ -2,7 +2,7 @@
 title: 의존성 주입을 알아보자
 date: 2023-10-06 23:12:30 +09:00
 categories: [IT, TIL, Spring]
-tags: [TIL, Spring, DI]
+tags: [til, spring, di]
 image: /assets/img/posts/dependency-injection.png
 ---
 

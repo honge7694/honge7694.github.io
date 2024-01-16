@@ -2,7 +2,7 @@
 title: 항해99 일지(17) - Bubble, Selection, Insertion
 date: 2023-10-28 23:00:00 +09:00
 categories: [IT, DataStructure, TIL]
-tags: [항해99, TIL, 자료구조, Sort]
+tags: [항해99, til, 자료구조, sort]
 image: /assets/img/posts/logbook99.png
 ---
 

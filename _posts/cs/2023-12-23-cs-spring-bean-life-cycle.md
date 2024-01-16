@@ -2,7 +2,7 @@
 title: "Spring bean container 생성부터 스프링 종료까지의 사이클"
 date: 2023-12-23 18:00:00 +09:00
 categories: [IT, CS]
-tags: [TIL, CS, Spring bean container Cycle]
+tags: [til, cs, spring bean container cycle]
 image: /assets/img/posts/cs.png
 ---
 

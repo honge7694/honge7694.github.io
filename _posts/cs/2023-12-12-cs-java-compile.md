@@ -2,7 +2,7 @@
 title: "Java가 컴파일되는 과정"
 date: 2023-12-12 18:00:00 +09:00
 categories: [IT, CS]
-tags: [TIL, JAVA Compile, CS]
+tags: [til, java compile, cs]
 image: /assets/img/posts/cs.png
 ---
 

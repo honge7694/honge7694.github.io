@@ -2,7 +2,7 @@
 title: "JVM 스택과 힙메모리 영역"
 date: 2023-12-13 18:00:00 +09:00
 categories: [IT, CS]
-tags: [TIL, JVM, CS]
+tags: [til, jvm, cs]
 image: /assets/img/posts/cs.png
 ---
 

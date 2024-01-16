@@ -2,13 +2,15 @@
 title: "Call by Value, Call by Reference"
 date: 2023-12-06 18:00:00 +09:00
 categories: [IT, CS]
-tags: [TIL, CS, call by reference]
-image: /assets/img/posts/CS.png
+tags: [til, cs, call by reference]
+image: /assets/img/posts/cs.png
 ---
 
 $$
+
 자바에서는 Call by Refernce 개념이 없다.
 왜냐하면 C와 달리 자바에서는 포인터를 철저하게 숨겨 개발자가 직접 메모리 주소에 접근하지 못하게 조치했기 때문이다. 자바에서의 파라미터는 Call by Value로서만 동작되며, 원시값이 복사 되느냐 주소값이 복사되느냐 차이가 있을 뿐이다. 그리고 매개변수에 복사된 값에 따라, 원시값이면 바로 연산을하고 주소값이면 해당 메모리 주소를 참조해 값을 가져와 연산한다.
+
 $$
 
 
@@ -63,6 +65,7 @@ Call by Reference는 참조(주소)를 직접 전달하여 Pass By Reference라�
 
 > TIP    
 > 참조값(주소값) 복사는 배열 뿐만 아니라 클래스, 리스트, 맵 등 원시(primitive)타입이 아닌 모든 타입에 대해서 적용된다.
+{: prompt-tip }
 
 
 ## Call by Value 과정
@@ -87,6 +90,7 @@ Java에서 변수를 선언하면 Stack 영역에 할당된다.
 > 하나의 메서드당 하나의 스택 프레임이 필요하며, 메서드를 호출하기 직전 스택프레임을 자바 Stack에 생성한 후 메서드를 호출하게 된다.    
 > 스택 프레임에 쌓이는 데이터는 메서드의 매개변수, 지역변수, 리턴값 등이 있다.     
 > 만일 메서드 호출범위가 종료되면 스택에서 제거된다.    
+{: prompt-info }
 
 
 ### 2. add_value() 메서드 - call by value

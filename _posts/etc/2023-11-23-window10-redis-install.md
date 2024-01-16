@@ -1,8 +1,8 @@
 ---
 title: Windows 10 환경 Redis 설치
 date: 2023-11-23 18:00:00 +09:00
-categories: [IT, Redis]
-tags: [TIL, Redis]
+categories: [IT, redis]
+tags: [til, redis]
 image: /assets/img/posts/redis.png
 ---
 

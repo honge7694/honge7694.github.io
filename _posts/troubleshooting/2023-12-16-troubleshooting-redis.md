@@ -2,7 +2,7 @@
 title: "[AWS & Redis] Error creating bean with name 'redissonLockTicketFacade' defined in URL"
 date: 2023-12-16 18:02:00 +09:00
 categories: [IT, TroubleShooting, Redis]
-tags: [TIL, TroubleShooting, Redis]
+tags: [til, troubleshooting, redis]
 image: /assets/img/posts/trouble-shooting.png
 ---
 

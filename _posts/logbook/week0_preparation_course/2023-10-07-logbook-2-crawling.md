@@ -2,7 +2,7 @@
 title: 항해99 일지(2) - 크롤링이란?
 date: 2023-10-07 22:22:00 +09:00
 categories: [IT, TIL]
-tags: [항해99, TIL, 크롤링, JavaScript, jQuery]
+tags: [항해99, til, 크롤링, javascript, jquery]
 image: /assets/img/posts/logbook99.png
 ---
 
@@ -60,8 +60,8 @@ soup.select('a')[0] # 첫 번째 링크를 선택한다.
 ```
 
 
-#### CSS 선택자 조합
-여러 CSS 선택자를 조합하여 복잡한 선택 조건을 만들 수 있다.
+#### csS 선택자 조합
+여러 csS 선택자를 조합하여 복잡한 선택 조건을 만들 수 있다.
 ```python
 # div 클래스가 "header"인 요소 내부의 h1 태그 중 클래스가 "title"인 요소를 선택한다.
 soup.select('div.header > h1.title') 
@@ -76,7 +76,7 @@ soup.select('div.header > h1.title')
 ```
 
 #### .select_one()
-Beautiful Soup 객체에서 특정 CSS 선택자로 선택한 첫 번째 요소를 가져오는 데 사용된다.
+Beautiful Soup 객체에서 특정 csS 선택자로 선택한 첫 번째 요소를 가져오는 데 사용된다.
 이 메서드는 하나의 요소만 반환하며, 여러 요소가 일치하는 경우 첫 번째 요소를 반환한다.
 ```python
 # h1.title 태그 중에서 첫 번째로 일치하는 요소를 선택한다.

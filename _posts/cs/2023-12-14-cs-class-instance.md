@@ -2,7 +2,7 @@
 title: "클래스와 인스턴스의 차이"
 date: 2023-12-14 18:00:00 +09:00
 categories: [IT, CS]
-tags: [TIL, CS, class&instance]
+tags: [til, cs, class, instance]
 image: /assets/img/posts/cs.png
 ---
 

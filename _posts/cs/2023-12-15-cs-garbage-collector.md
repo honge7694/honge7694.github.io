@@ -2,7 +2,7 @@
 title: "Garbage Collector의 역할, 원리, 알고리즘"
 date: 2023-12-15 18:00:00 +09:00
 categories: [IT, CS]
-tags: [TIL, CS, GabageCollector]
+tags: [til, cs, garbage collector]
 image: /assets/img/posts/cs.png
 ---
 

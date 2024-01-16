@@ -2,7 +2,7 @@
 title: "항해99 일지(21) - 최단경로:다익스트라"
 date: 2023-11-02 23:00:00 +09:00
 categories: [IT, DataStructure, Algorithm, TIL]
-tags: [항해99, TIL, algorithm, 최단 경로, 다익스트라]
+tags: [항해99, til, algorithm, 최단 경로, 다익스트라]
 image: /assets/img/posts/logbook99.png
 ---
 

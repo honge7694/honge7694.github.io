@@ -2,7 +2,7 @@
 title: "MVC 모델이란?"
 date: 2023-12-19 18:00:00 +09:00
 categories: [IT, CS]
-tags: [TIL, CS, MVC]
+tags: [til, cs, mvc]
 image: /assets/img/posts/cs.png
 ---
 

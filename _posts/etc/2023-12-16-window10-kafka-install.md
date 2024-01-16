@@ -2,7 +2,7 @@
 title: "Window Kafka 설치 및 실행"
 date: 2023-12-16 18:01:00 +09:00
 categories: [IT, Kafka]
-tags: [TIL, kafka, zookeeper]
+tags: [til, kafka, zookeeper]
 image: /assets/img/posts/kafka.png
 ---
 

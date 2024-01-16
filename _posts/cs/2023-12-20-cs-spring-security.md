@@ -2,7 +2,7 @@
 title: "Spring Security의 구조와 JWT 발급 과정"
 date: 2023-12-20 18:00:00 +09:00
 categories: [IT, CS]
-tags: [TIL, CS, Spring Security]
+tags: [til, cs, spring security]
 image: /assets/img/posts/cs.png
 ---
 

@@ -2,7 +2,7 @@
 title: "[GIT] Error: Gradle script '/home/runner/work/~/gradlew' is not executable. 해결"
 date: 2023-11-21 16:00:00 +09:00
 categories: [IT, Git, TroubleShooting]
-tags: [TIL, Git, TroubleShooting]
+tags: [til, Git, troubleshooting]
 image: /assets/img/posts/trouble-shooting.png
 ---
 

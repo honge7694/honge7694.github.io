@@ -2,7 +2,7 @@
 title: spring-boot-start
 date: 2023-10-10 21:30:00 +09:00
 categories: [IT, Spring, TIL]
-tags: [Spring Boot, 환경설정, 프로젝트 시작, start.spring.io, spring-boot-devtools, spring-boot배포]
+tags: [spring boot, 환경설정, 프로젝트 시작, start.spring.io, spring-boot-devtools, spring-boot배포]
 image: /assets/img/posts/spring-boot-start.png
 ---
 

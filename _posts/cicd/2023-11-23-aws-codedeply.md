@@ -2,7 +2,7 @@
 title: "CodeDeploy 생성"
 date: 2023-11-23 23:03:00 +09:00
 categories: [IT, AWS, CI/CD]
-tags: [TIL, AWS, CI/CD, Github Actions]
+tags: [til, AWS, CI/CD, Github Actions]
 image: /assets/img/posts/aws.png
 ---
 

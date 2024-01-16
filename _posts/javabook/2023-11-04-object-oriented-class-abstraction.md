@@ -2,7 +2,7 @@
 title: "[자바 객체 지향의 원리와 이해] 3장 : 추상화"
 date: 2023-11-04 18:00:00 +09:00
 categories: [IT, Java]
-tags: [항해99, Java, 자바 객체 지향의 원리와 이해]
+tags: [항해99, java, 자바 객체 지향의 원리와 이해]
 image: /assets/img/posts/java-study-book.png
 ---
 

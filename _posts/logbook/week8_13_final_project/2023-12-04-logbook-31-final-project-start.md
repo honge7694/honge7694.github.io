@@ -2,13 +2,13 @@
 title: 항해99 일지(31) - Final Project Start
 date: 2023-12-04 18:00:00 +09:00
 categories: [IT, WIL]
-tags: [항해99, WIL]
+tags: [항해99, wil]
 image: /assets/img/posts/logbook99.png
 ---
 
 ## Final Project 시작
 
-이번엔 팀원이 4명이다. 박정민님, 이현범님, 이진서님 그리고 나이다. 이번 프로젝트는 대용량 트래픽을 다뤄보려하는데 잘 되면 좋겠다. 우리는 다양한 기술을 많이 사용할 예정인데, 어떻게 변할지는 잘 모르겠다. CI/CD를 이용할 것이고, ECS, Elastic Search, WebFlux 등등 사용할 예정인데 열심히 공부해서 완성할 수 있으면 좋겠다.
+이번엔 팀원이 4명이다. 박정민님, 이현범님, 이진서님 그리고 나이다. 이번 프로젝트는 대용량 트래픽을 다뤄보려하는데 잘 되면 좋겠다. 우리는 다양한 기술을 많이 사용할 예정인데, 어떻게 변할지는 잘 모르겠다. CI/CD를 이용할 것이고, Ecs, Elastic Search, WebFlux 등등 사용할 예정인데 열심히 공부해서 완성할 수 있으면 좋겠다.
 
 <br/>
 
@@ -27,7 +27,7 @@ image: /assets/img/posts/logbook99.png
     - 참고 사이트 : [https://velog.io/@kimseungki94/Jenkins-vs-Github-Action-어떤걸-쓰는게-좋을까](https://velog.io/@kimseungki94/Jenkins-vs-Github-Action-%EC%96%B4%EB%96%A4%EA%B1%B8-%EC%93%B0%EB%8A%94%EA%B2%8C-%EC%A2%8B%EC%9D%84%EA%B9%8C)
     - 블로그 참고한 것들 정리
 - Docker container image
-- ECS
+- Ecs
 - 로드밸런싱
     - 선택지 : docker compose / Nginx(오픈소스) / ELB
     - ELB 참고 사이트:
@@ -143,7 +143,7 @@ https://goyunji.tistory.com/95
     - 단점
         - 메모리 사용, 단일 스레드 모델, 복잡한 쿼리 처리, 데이터 복제의 지연
 
-### 클러스터링(ECS 지원)
+### 클러스터링(Ecs 지원)
 
 - 선택지 : Docker swarm / kubernetes
 - Docker swarm

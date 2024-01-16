@@ -2,7 +2,7 @@
 title: 항해99 일지(6) - LinkedList
 date: 2023-10-17 23:00:00 +09:00
 categories: [IT, DataStructure, TIL]
-tags: [항해99, TIL, 자료구조, LikedList]
+tags: [항해99, til, 자료구조, linkedlist]
 image: /assets/img/posts/logbook99.png
 ---
 
