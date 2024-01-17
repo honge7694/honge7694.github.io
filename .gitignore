@@ -18,11 +18,5 @@ package-lock.json
 .idea
 .vscode
 
-# Mac
-.DS_Store
-
 # Misc
-#assets/js/dist
-
-# Obsidian
-.Obsidian
+assets/js/dist

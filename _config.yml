@@ -3,39 +3,35 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
-# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
-# and doesn't have a custom domain.
-baseurl: ""
-
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: ko-KR
+lang: en
 
-# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Hong's Docs
+title: Hong's Docs # the main title
 
-sidebar_title: Hong's Docs
-
-tagline: Backend Developer
+tagline: Backend Developer # it will display as the sub-title
 
 subdescription: 습득한 지식과 노하우를 <br> 기록하는 기술 블로그입니다.
 
 description: >- # used by seo meta and the atom feed
   공부일지
 
+# Fill in the protocol & hostname for your site.
+# e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://honge7694.github.io/"
 
 github:
-  username: honge7694
+  username: honge7694 # change to your github username
 
 twitter:
-  username: none
+  username: none # change to your twitter username
 
 social:
   # Change to your full name.
@@ -48,15 +44,14 @@ social:
     - https://github.com/honge7694 # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # 
 
-google_site_verification: kF1d3OmebYbOVGWTQp6VSJ86XRvWwqIgBtnKAlM9A4U
+google_site_verification: kF1d3OmebYbOVGWTQp6VSJ86XRvWwqIgBtnKAlM9A4U # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: G-BT1ZJ2N9EP
+  id: G-BT1ZJ2N9EP # fill in your Google Analytics ID
 
 # Prefer color scheme setting.
 #
@@ -76,10 +71,14 @@ theme_mode: light # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: https://cdn.jsdelivr.net/gh/honge7694/honge7694.github.io@main
+img_cdn: "https://cdn.jsdelivr.net/gh/honge7694/honge7694.github.io@main"
 
 # the avatar on sidebar, support local or CORS resources
 avatar: "/assets/img/avatar/avatar.png"
+
+# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
+# It can be overridden by a customized `page.image` in front matter.
+social_preview_image: # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -116,6 +115,9 @@ pwa:
   enabled: true # the option for PWA feature
 
 paginate: 10
+
+# The base URL of your site
+baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 
@@ -180,12 +182,11 @@ compress_html:
 exclude:
   - "*.gem"
   - "*.gemspec"
+  - docs
   - tools
   - README.md
-  - CHANGELOG.md
   - LICENSE
   - rollup.config.js
-  - node_modules
   - package*.json
 
 jekyll-archives:
