@@ -167,7 +167,7 @@ defaults:
     values:
       swcache: true
 
-sass: 
+sass:
   style: compressed
 
 compress_html:
