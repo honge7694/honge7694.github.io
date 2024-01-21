@@ -13,8 +13,8 @@ image: /assets/img/posts/spring.png
 saveAll()로 데이터를 한번에 저장했을 때, save()와 같이 insert가 3번이 보였다. 
 내가 생각한 것은 insert가 한개에 여러개의 데이터를 넣는 것이였는데, 이것을 한번 알아보았다.
 
-> bulk insert란?    
-> 대량의 데이터를 한 번에 데이터베이스에 삽입하는 기능을 말합니다. 이는 대량의 데이터를 일괄 처리하여 데이터베이스에 효율적으로 삽입할 수 있는 방법을 의미한다.    
+> **bulk insert란?**    
+> 대량의 데이터를 한 번에 데이터베이스에 삽입하는 기능을 말한다. 이는 대량의 데이터를 일괄 처리하여 데이터베이스에 효율적으로 삽입할 수 있는 방법을 의미한다.    
 > 주로 saveAll()을 사용하는 방법과 Jdbc Template를 사용하는 방법이 있다.
 {: .prompt-info }
 
@@ -95,22 +95,16 @@ Hibernate:
         (?, ?, ?, ?)
 ```
 
-마찬가지로 3번의 insert가 일어난다. 이렇게 이뤄지는 것때문에 무엇이 문제인가 살펴보게 되었다.
+마찬가지로 3번의 INSERT가 일어난다. 이렇게 save()처럼 3번의 INSERT가 일어나는 것때문에 무엇이 문제인가 살펴보게 되었다.
 
 ## saveAll()의 문제점
 
 일반적으로 JPA를 사용할 때 엔티티의 기본키 생성 전략을 **`GenerationType.IDENTITY`**로 가져간다.    
 
-<br/>
-
 @Id(기본키로) 지정된 필드가 비어있는데 어떻게 영속화가 가능할까??    
 
-<br/>
-
-Hibernates에서는 IDENTITY 전략을 사용할 경우 save 할 때 데이터베이스에 일단 INSERT한 뒤 생성된 기본키를 가져온다.    
+Hibernates에서는 IDENTITY 전략을 사용할 경우 save 할 때 데이터베이스에 일단 INSERT한 뒤 생성된 기본키를 가져온다.
 그러다보니 Bulk Insert 할 때 N번 째 데이터의 기본키(식별자)를 채번 하기 위해 N-1 데이터까지 INSERT가 되어있는 상태에서 N번 째 데이터를 **INSERT하고 생성된 기본키를 가져오게 되어서 실질적으로 N번의 삽입 쿼리가 발생**한다.    
-
-<br/>
 
 위와 같은 채번 원리때문에 Hibernates에서는 **기본적으로 IDENTITY 기본키 생성 전략을 가져갈 때 Batch Insert를 허용하지 않는다**는 것을 알 수 있다.
 
@@ -130,9 +124,10 @@ CREATE TABLE sequence (
 );
 ```
 
-GenerationType.SEQUENCE 또는 GenerationType.TABLE 방식을 사용하는 것이다.
-
+GenerationType.SEQUENCE 또는 GenerationType.TABLE 방식을 사용하는 것이다.    
 로컬에서는 MySQL을 사용하고 있어, SEQUENCE 채빈 방식을 지원하지 않기 때문에 TABLE 채번 방식을 활용한다.
+
+<br/>
 
 ### 1. Entity 클래스 코드를 변경
 
@@ -171,6 +166,8 @@ public class Ticket {
 }
 ```
 
+<br/>
+
 
 ### 1. 결과
 
@@ -204,6 +201,9 @@ Hibernate:
 
 select가 나오고 insert가 연속으로 나오게 바뀌었다. 하지만 여전히 bulk insert라고 할 수 있을지는 의문이다.
 
+<br/>
+
+
 ### 2. application.yml 파일에 url 추가
 
 1.결과에서 Hibernate는 단지 PreparedStatemenet.addBatch()를 호출하기만 할 뿐 실제로는 쿼리가 합쳐지는지 아닌지는 모르는 상태이기 때문이다. 실제로 발생한 쿼리를 모와서 Batch Insert를 시키는 주체는 Hibernate가 아니라 MySQL 드라이버에서 진행하는 것을 알 수 있다.
@@ -220,6 +220,9 @@ spring:
 이를 위해 `url: jdbc:mysql://localhost:3306/yeti?rewriteBatchedStatements=true&profileSQL=true&logger=Slf4JLogger&maxQuerySizeToLog=999999`    
 ? 뒤에 명령어를 써준다면 insert가 한번에 되는지 알 수 있다.
 
+<br/>
+
+
 ### 2. 결과
 
 ```bash
@@ -228,15 +231,18 @@ spring:
 
 3개의 결과가 들어가는 것을 확인할 수 있다.
 
-> saveAll()은 yml을 바꿔주면 어떻게 될까?    
-> 위에서 말한 saveAll()의 문제점에서 말했듯이 insert하는 과정에서 INSERT하고 생성된 기본키를 가져오게 되어서 실질적으로 N번의 삽입 쿼리가 발생하므로, 3번의 INSERT가 발생한다.
+> **saveAll()은 yml을 바꿔주면 어떻게 될까?**    
+> 위에서 말한 saveAll()의 문제점에서 말했듯이 INSERT하는 과정에서 INSERT하고 생성된 기본키를 가져오게 되어서 실질적으로 N번의 삽입 쿼리가 발생하므로, 3번의 INSERT가 발생한다.
 {: .prompt-info }
 
+<br/>
 
 ## 방법 2. Jdbc BatchUpdate
 
 별도의 테이블을 만들지 않고 기본키 생성 전략도 변경하지 않는 방법이 있다.    
 바로 JDBC의 batchUpdate를 사용하는 방법이다.
+
+<br/>
 
 ### 1. Entity 원상복구
 
@@ -268,6 +274,8 @@ public class Ticket {
 }
 ```
 
+<br/>
+
 ### 2. TicketJdbcBatchRepository 생성
 
 ```java
@@ -298,6 +306,7 @@ public class TicketJdbcBatchRepository {
 }
 ```
 
+<br/>
 
 ### 결과
 
@@ -307,3 +316,15 @@ public class TicketJdbcBatchRepository {
 
 3개의 데이터를 넣었을 때, 한번의 INSERT가 일어나는 것을 확인할 수 있었다.
 
+
+<br/>
+
+***
+
+<br/>
+
+## 참고 
+
++ [PIDGEY 블로그](https://pidgey.tistory.com/23)
++ [훈훈훈 블로그](https://wave1994.tistory.com/160)
++ [사바라다는 차곡차곡 블로그](https://sabarada.tistory.com/220)
