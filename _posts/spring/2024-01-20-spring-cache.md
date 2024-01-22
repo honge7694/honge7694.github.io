@@ -1,3 +1,4 @@
+---
 title: "Cache를 사용해보자"
 date: 2024-01-20 18:01:00 +09:00
 categories: [IT, Spring]
@@ -33,6 +34,7 @@ Hibernate:
         ti1_0.ticket_info_id=?
 ```
 
+<br/>
 
 ## Cache란?
 
