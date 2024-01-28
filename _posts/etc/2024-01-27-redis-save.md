@@ -11,7 +11,7 @@ image: /assets/img/posts/redis.png
 
 ## Redis의 저장 방식
 
-![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/773cc872-5499-4a43-8976-d029eec8af3e)
+![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/158480b5-465d-4099-8fc3-9954941def4b)
 
 Redis는 In-Memory DB임에도 불구하고, 메모리 데이터를 disk에 저장할 수 있는 특징이 있다.
 서버가 꺼진 후 restart 되더라도, disk에 저장해놓은 데이터를 다시 읽어서 메모리에 로딩하기 때문에 데이터가 유실되지 않는다.    
