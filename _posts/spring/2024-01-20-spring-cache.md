@@ -1,4 +1,3 @@
----
 title: "Cache를 사용해보자"
 date: 2024-01-20 18:01:00 +09:00
 categories: [IT, Spring]
@@ -34,7 +33,6 @@ Hibernate:
         ti1_0.ticket_info_id=?
 ```
 
-<br/>
 
 ## Cache란?
 
@@ -82,7 +80,7 @@ public class CachingConfig {
 
 + `@Cachealbe`
 	+ 데이터를 캐시에 저장
-	+ 메서드를 호출할 때 캐시으 이름(value)와 키(key)를 확인하여 이미 저장된 데이터가 있으면 해당 데이터를 리턴
+	+ 메서드를 호출할 때 캐시의 이름(value)와 키(key)를 확인하여 이미 저장된 데이터가 있으면 해당 데이터를 리턴
 	+ 데이터가 없다면 메서드 수행 후 결과 값을 저장
 + `@CachePut`
 	+ `@Cacheable`은 캐시에 데이터가 이미 존재하면 메서드를 수행하지 않지만, `@CachePut`은 항상 메서드를 수행
@@ -96,6 +94,11 @@ public class CachingConfig {
 	+ Cacheable, CachePut, CacheEvict를 여러개 사용할 때 묶어주는 기능
 
 일반적으로 `@Cacheable`을 사용해서 캐싱하고 데이터를 갱신할 때 `@CachePut`, `@CacheEvict` 중 하나를 선택해서 갱신한다.
+
+<br/>
+
+> **이름(value)와 키(key)의 차이점은?**    
+>  value는 캐시의 이름을 나타내며, key는 메서드의 매개변수 또는 반환 값을 기반으로 캐시 키를 생성한다. 따라서 value에서 정해진 캐시에서 검색하거나 저장할 때 key에 지정된 값을 캐시 키로 사용한다.
 
 
 ### 3. Repository 수정
@@ -111,11 +114,17 @@ public interface TicketInfoRepository extends JpaRepository<TicketInfo, Long> {
 }
 ```
 
-
-`ticketInfoId` 를 키 값으로 설정하며 이 키 값은 findById 메서드의 매개변수와 같아야 한다. 그리고  `unless = "#result == null"` 조건을 추가하여 DB에 없는 데이터인 경우 캐싱하지 않는다. 만약 조건이 없다면 null 값도 캐싱된다.    
+`ticketInfoId` 를 키 값으로 설정하고  `unless = "#result == null"` 조건을 추가하여 DB에 없는 데이터인 경우 캐싱하지 않는다. 만약 조건이 없다면 null 값도 캐싱된다.    
 CacheConfig 클래스에서 `cacheManager.setAllowNullValues(false);`를 추가했기 때문에 null 값을 캐싱하면 에러가 발생하니 꼭 조건을 추가해줘야한다.
 
 <br/>
+
+> **key 속성의 값은 매개변수와 같아야할까??**    
+메서드의 매개변수나 반환값 등을 사용하여 캐시 키를 생성하는데 사용할 수 있다.
+{: .prompt-tip }
+
+<br/>
+
 
 ## 결과
 
@@ -195,7 +204,6 @@ Hibernate:
 ```
 
 ticketInfo를 조회하는 과정이 생략된 것을 알 수 있다.
-
 
 <br/>
 
