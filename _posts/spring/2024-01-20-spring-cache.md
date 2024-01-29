@@ -100,7 +100,7 @@ public class CachingConfig {
 
 > **이름(value)와 키(key)의 차이점은?**    
 >  value는 캐시의 이름을 나타내며, key는 메서드의 매개변수 또는 반환 값을 기반으로 캐시 키를 생성한다. 따라서 value에서 정해진 캐시에서 검색하거나 저장할 때 key에 지정된 값을 캐시 키로 사용한다.
-
+{: .prompt-tip }
 
 ### 3. Repository 수정
 
