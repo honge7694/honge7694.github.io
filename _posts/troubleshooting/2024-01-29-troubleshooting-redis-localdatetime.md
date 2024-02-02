@@ -3,7 +3,7 @@ title: "[Redis] Java 8 LocalDateTime Error"
 date: 2024-01-29 18:00:00 +09:00
 categories: [IT, Spring]
 tags: [til, Spring, trouble shooting, cache, redis]
-image: /assets/img/posts/TroubleShooting.png
+image: /assets/img/posts/trouble-shooting.png
 ---
 
 
