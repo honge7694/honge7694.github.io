@@ -1,9 +1,9 @@
 ---
 title: "Elastic APM 시작하기"
 date: 2024-02-01 15:30:00 +09:00
-categories: [DevOps, Elastic]
+categories: [IT, Elastic]
 tags: [elastic, setting]
-image: /assets/img/posts/til.png
+image: /assets/img/posts/apm.png
 ---
 
 docker 환경에서 Elastic 실행을 정리해본다. Elastic APM을 사용해보기 위함이다.
@@ -301,7 +301,15 @@ docker-compose up -d
 
 ![image](https://github.com/honge7694/honge7694.github.io/assets/76715487/4010475b-5306-47de-be4a-6f515fbe6079)
 
+```
+-javaagent:D:/sparta/Yeti/elastic-apm-agent-1.36.0.jar
+-Delastic.apm.service_name=yeti-project
+-Delastic.apm.server_url=http://{ip}:8200
+-Delastic.apm.application_packages=com.example.yetiproject
+```
+
 javaagent는 절대경로로 작성해야한다.
+
 
 ### 4. 프로젝트 실행 후 APM site Launch APM
 {ip:5601}으로 접속하여 apm에서 launch APM
