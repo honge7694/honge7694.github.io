@@ -9,8 +9,6 @@ image: /assets/img/posts/trouble-shooting.png
 ## 에러 발생 상황
 JPA를 활용한 nativeQuery로 DTO를 만들어 맵핑하는 과정에서 발생된 에러이다.    
 
-<br/>
-
 org.springframework.core.convert.ConverterNotFoundException No converter found capable of converting from type
 
 <br/>
@@ -65,6 +63,7 @@ public class BookLoanInfoDto {
 }
 ```
 
+<br/>
 
 ## 해결 과정
 
@@ -108,12 +107,13 @@ public class BookLoanInfoDto {
 
 하지만 이렇게 변경하여도 여전히 같은 에러가 발생하였다.
 
+<br/>
 
 ## 해결
 
 ### interface 생성
 
-#### BookDeatilView Interface 생성
+#### BookDetailView Interface 생성
 ```java
 public interface BookDetailView {
     Long getbook_id();
