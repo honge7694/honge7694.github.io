@@ -95,10 +95,10 @@ JPA 관련 다양한 스펙과 작성법 (@Entitity, @Table, @Column, @Id, @OneT
 ## MyBatis 사용해보기
 
 ### 방법 1
+
+#### mybatis-config.xml
  
- #### mybatis-config.xml
- 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
@@ -108,12 +108,12 @@ JPA 관련 다양한 스펙과 작성법 (@Entitity, @Table, @Column, @Id, @OneT
     </typeAliases>
 </configuration>
 ```
- 
- (1) : `type="com.mybatis.board.entity.Board"`에 있는 dto를 alias를 이용해 board라는 별칭으로 사용하겠다고 한 것이다. 앞으로 이 board는 `board-mapper.xml`에서 정의 한 `parameterType`에서 사용된다.
- 
- #### board-mapper.xml
- 
-```
+
+(1) : `type="com.mybatis.board.entity.Board"`에 있는 dto를 alias를 이용해 board라는 별칭으로 사용하겠다고 한 것이다. 앞으로 이 board는 `board-mapper.xml`에서 정의 한 `parameterType`에서 사용된다.
+
+#### board-mapper.xml
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
@@ -170,7 +170,7 @@ public class BoardService {
 #### mybatis-config.xml
 방법1과 같다.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
@@ -183,7 +183,7 @@ public class BoardService {
 
 #### board-mapper.xml
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
@@ -200,7 +200,7 @@ public class BoardService {
 
 #### BoardMapper
 
-```
+```java
 @Mapper // (1)
 public interface BoardMapper {
     void save(BoardDto boardDto); // (2)
@@ -212,7 +212,7 @@ public interface BoardMapper {
 
 #### Service
 
-```
+```java
 @Service
 @RequiredArgsConstructor
 public class BoardService {
