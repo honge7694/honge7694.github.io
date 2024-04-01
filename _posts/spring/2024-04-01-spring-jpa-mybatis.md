@@ -126,7 +126,7 @@ JPA 관련 다양한 스펙과 작성법 (@Entitity, @Table, @Column, @Id, @OneT
 </mapper>
 ```
 
-(1) : Board는 Repository의 `sql.insert()`에서 사용된다.
+(1) : Board는 Repository의 `sql.insert()`에서 사용된다.    
 (2) 
 + `id="save"`는 Repository에서 정의된 메서드의 이름을 의미한다. 
 + `parameterType="board"`는 `mybatis-config.xml`에 정의된 `alias`를 의미한다. 이를 다르게 사용하려면 `com.mybatis.board.entity.Board` 경로를 모두 입력해야한다.
@@ -196,7 +196,7 @@ public class BoardService {
 </mapper>
 ```
 
-(1) : 방법 1에서 사용하던 `namesapce="Board"`가 전체 경로를 나타나게 바뀌었다.
+(1) : 방법 1에서 사용하던 `namespace="Board"`가 전체 경로를 나타나게 바뀌었다.
 
 #### BoardMapper
 
@@ -207,7 +207,7 @@ public interface BoardMapper {
 }
 ```
 
-(1) :  `@Mapper` 어노테이션을 사용하여 MyBatis가 해당 인터페이스에 대한 구현체를 동적으로 생성하고, SQL 쿼리와 메서드 호출을 매핑하여 데이터베이스와 상호작용할 수 있다.
+(1) :  `@Mapper` 어노테이션을 사용하여 MyBatis가 해당 인터페이스에 대한 구현체를 동적으로 생성하고, SQL 쿼리와 메서드 호출을 매핑하여 데이터베이스와 상호작용할 수 있다.    
 (2) : board-mapper.xml의 (1)에서 연결하여 sql을 따로 연결하지 않아도 된다.
 
 #### Service
