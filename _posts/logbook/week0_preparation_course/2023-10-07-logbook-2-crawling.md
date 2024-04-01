@@ -1,9 +1,9 @@
 ---
-title: 항해99 일지(2) - 크롤링이란?
+title: 크롤링이란?
 date: 2023-10-07 22:22:00 +09:00
 categories: [IT, TIL]
-tags: [항해99, til, 크롤링, javascript, jquery]
-image: /assets/img/posts/logbook99.png
+tags: [ til, 크롤링, javascript, jquery]
+image: /assets/img/posts/til.png
 ---
 
 

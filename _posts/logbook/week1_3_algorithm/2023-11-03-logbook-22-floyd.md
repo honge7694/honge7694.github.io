@@ -1,9 +1,9 @@
 ---
-title: "항해99 일지(22) - 최단경로:플로이드-와샬"
+title: "최단경로:플로이드-와샬"
 date: 2023-11-03 23:00:00 +09:00
 categories: [IT, DataStructure, Algorithm, TIL]
-tags: [항해99, til, algorithm, 최단 경로, 플로이드 와샬]
-image: /assets/img/posts/logbook99.png
+tags: [ til, algorithm, 최단 경로, 플로이드 와샬]
+image: /assets/img/posts/til.png
 ---
 
 

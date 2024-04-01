@@ -1,8 +1,8 @@
 ---
-title: "[Cookie] 항해99 일지(29) - Spring - React 쿠키가 저장되지 않는 문제 해결"
+title: "[Cookie] Spring - React 쿠키가 저장되지 않는 문제 해결"
 date: 2023-11-25 23:01:00 +09:00
 categories: [IT, TroubleShooting]
-tags: [항해99, til, troubleshooting]
+tags: [ til, troubleshooting]
 image: /assets/img/posts/trouble-shooting.png
 ---
 

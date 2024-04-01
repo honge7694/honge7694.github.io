@@ -1,9 +1,9 @@
 ---
-title: 항해99 일지(20) - Binary Search
+title: Binary Search
 date: 2023-10-31 23:00:00 +09:00
 categories: [IT, DataStructure, TIL]
-tags: [항해99, til, 자료구조, binary search, python-library, bisect]
-image: /assets/img/posts/logbook99.png
+tags: [ til, 자료구조, binary search, python-library, bisect]
+image: /assets/img/posts/til.png
 ---
 
 ## 이진 탐색(Binary Search)

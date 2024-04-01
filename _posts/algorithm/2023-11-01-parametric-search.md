@@ -2,7 +2,7 @@
 title: 파라메트릭 서치란?
 date: 2023-11-01 17:00:00 +09:00
 categories: [IT, DataStructure, Algorithm, TIL]
-tags: [항해99, til, algorithm, parametric]
+tags: [til, algorithm, parametric]
 image: /assets/img/posts/algorithm.png
 ---
 

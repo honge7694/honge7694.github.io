@@ -1,5 +1,5 @@
 ---
-title: 항해99 일지(25) - SpringBoot Cookie, Session, JWT
+title: SpringBoot Cookie, Session, JWT
 date: 2023-11-10 14:00:00 +09:00
 categories: [IT, Spring, TIL]
 tags: [spring boot, session, cookie, jwt]

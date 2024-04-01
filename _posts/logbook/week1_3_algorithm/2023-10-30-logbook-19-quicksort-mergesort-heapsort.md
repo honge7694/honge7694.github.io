@@ -1,9 +1,9 @@
 ---
-title: 항해99 일지(19) - Quicksort, Mergesort, Heapsort
+title: Quicksort, Mergesort, Heapsort
 date: 2023-10-30 21:00:00 +09:00
 categories: [IT, DataStructure, TIL]
-tags: [항해99, til, 자료구조, sort]
-image: /assets/img/posts/logbook99.png
+tags: [ til, 자료구조, sort]
+image: /assets/img/posts/til.png
 ---
 
 ## 퀵 정렬(Quicksort)

@@ -1,9 +1,9 @@
 ---
-title: 항해99 일지(16) - heap
+title: heap
 date: 2023-10-27 23:00:00 +09:00
 categories: [IT, DataStructure, TIL]
-tags: [항해99, til, 자료구조, heap]
-image: /assets/img/posts/logbook99.png
+tags: [ til, 자료구조, heap]
+image: /assets/img/posts/til.png
 ---
 
 
@@ -93,7 +93,7 @@ class MinHeap:
  3. 이로인해 트리의 높이에 비례하는 O(log n)의 시간이 필요하다.
 
 <details>
-<summary>항해99 - 힙의 삽입 알고리즘</summary>
+<summary>힙의 삽입 알고리즘</summary>
 
 <div markdown="1">
 
@@ -149,7 +149,7 @@ class MinHeap:
 
 
 <details>
-<summary>항해99 - 힙의 삭제 알고리즘</summary>
+<summary>힙의 삭제 알고리즘</summary>
 
 <div markdown="1">
 

@@ -1,9 +1,9 @@
 ---
-title: 항해99 일지(13) - Backtracking 
+title: Backtracking 
 date: 2023-10-24 19:00:00 +09:00
 categories: [IT, DataStructure, TIL]
-tags: [항해99, til, 자료구조, backtracking]
-image: /assets/img/posts/logbook99.png
+tags: [ til, 자료구조, backtracking]
+image: /assets/img/posts/til.png
 ---
 
 ## 백트래킹이란?

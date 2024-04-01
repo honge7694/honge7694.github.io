@@ -2,7 +2,7 @@
 title: "[자바 객체 지향의 원리와 이해] 3장 : 클래스 vs 객체"
 date: 2023-11-03 18:00:00 +09:00
 categories: [IT, Java]
-tags: [항해99, java, 자바 객체 지향의 원리와 이해]
+tags: [ java, 자바 객체 지향의 원리와 이해]
 image: /assets/img/posts/java-study-book.png
 ---
 

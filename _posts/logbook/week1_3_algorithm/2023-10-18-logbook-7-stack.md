@@ -1,9 +1,9 @@
 ---
-title: 항해99 일지(7) - Stack
+title: Stack
 date: 2023-10-18 23:00:00 +09:00
 categories: [IT, DataStructure, TIL]
-tags: [항해99, til, 자료구조, stack]
-image: /assets/img/posts/logbook99.png
+tags: [til, 자료구조, stack]
+image: /assets/img/posts/til.png
 ---
 
 ## Stack

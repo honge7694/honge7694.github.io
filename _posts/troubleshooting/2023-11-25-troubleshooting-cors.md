@@ -1,8 +1,8 @@
 ---
-title: "[CORS] 항해99 일지(28) - Spring - React CORS 문제 해결"
+title: "[CORS] Spring - React CORS 문제 해결"
 date: 2023-11-25 23:00:00 +09:00
 categories: [IT, TroubleShooting]
-tags: [til, 항해99, troubleshooting]
+tags: [til,  troubleshooting]
 image: /assets/img/posts/trouble-shooting.png
 ---
 
