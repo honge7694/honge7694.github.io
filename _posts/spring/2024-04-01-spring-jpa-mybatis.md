@@ -168,18 +168,7 @@ public class BoardService {
 ### 방법 2
 
 #### mybatis-config.xml
-방법1과 같다.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
-        "http://mybatis.org/dtd/mybatis-3-config.dtd">
-<configuration>
-    <typeAliases>
-        <typeAlias type="com.mybatis.board.entity.Board" alias="board"></typeAlias>
-    </typeAliases>
-</configuration>
-```
+방법1과 다르게 없이 진행한다.
 
 #### board-mapper.xml
 
@@ -189,7 +178,7 @@ public class BoardService {
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.mybatis.board.repository.BoardMapper"> // (1)
-    <insert id="save" parameterType="board">
+    <insert id="save" parameterType="com.mybatis.board.entity.Board"> // (2)
         insert into board_table(boardTitle, boardWriter, boardPass, boardContents)
             values(#{boardTitle}, #{boardWriter}, #{boardPass}, #{boardContents})
     </insert>
@@ -197,6 +186,7 @@ public class BoardService {
 ```
 
 (1) : 방법 1에서 사용하던 `namespace="Board"`가 전체 경로를 나타나게 바뀌었다.
+(2) : 방법 1에서 사용하던 `parameterType='board'`를 전체 경로로 나타나게 바뀌었다.
 
 #### BoardMapper
 
