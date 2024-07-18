@@ -186,6 +186,8 @@ image: /assets/img/posts/aws.png
 
 어떤 규모에서든 10밀리초 미만의 지연시간을 요구되는 모든 애플리켜션을 위한 빠르고 유연성이 뛰어난 **비관계형 데이터베이스 서비스**이며 문서모델과 키-값 모델을 지원한다.
 
+![image](https://github.com/user-attachments/assets/4e2cd663-0019-4349-aeee-e3836b679b3a)
+
 + Document Store
 	+ 데이터가 JSON 문서로 계층적으로 저장된다. 
 + Key-Value Store
