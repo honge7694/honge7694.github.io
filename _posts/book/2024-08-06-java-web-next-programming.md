@@ -184,6 +184,103 @@ public class Calculator {
 
 모든코드를 위 세가지의 원칙을 지키면서 구현하기는 어렵지만, 최대한 지키려고 노력하면 깔끔한 코드 작성이 가능하다.
 
+```java
+public class CalculatorRefactoring {
+    public int add(String text) {
+        if (text.isEmpty()) {
+            return 0;
+        }
+
+        return sum(toInts(split(text)));
+    }
+
+    private String[] split(String text) {
+        Matcher m = Pattern.compile("//(.)\n(.*)").matcher(text);
+        if (m.find()) {
+            String cumstomDelimeter = m.group(1);
+            return m.group(2).split(cumstomDelimeter);
+        }
+        return text.split("[,|]");
+    }
+
+    private int[] toInts(String[] values) {
+        int[] numbers = new int[values.length];
+        for (int i = 0; i < values.length; i++) {
+            numbers[i] = positiveNumber(Integer.parseInt(values[i]));
+        }
+        return numbers;
+    }
+
+    private int positiveNumber(int value) {
+        if (value < 0) {
+            throw new RuntimeException();
+        }
+        return value;
+    }
+
+    private int sum(int[] values) {
+        int sum = 0;
+        for (int i = 0; i < values.length; i++) {
+            sum += values[i];
+        }
+        return sum;
+    }
+}
+```
+
+### 테스트 코드
 
 
+```java
+class CalculatorPracTest {
+    private CalculatorPrac calculator;
 
+    @BeforeEach
+    void setUp() {
+        calculator = new CalculatorPrac();
+    }
+
+    @Description("숫자 한개")
+    @Test
+    void oneNumberString() {
+        String line = "1";
+        assertEquals(1, calculator.add(line));
+    }
+
+    @Description("빈문자열")
+    @Test
+    void emptyString() {
+        String line = "";
+        assertEquals(0, calculator.add(line));
+    }
+
+    @Description("쉼표, 세미콜론 분리")
+    @Test
+    void splitString() {
+        String line = "1,2,3,4:5";
+        assertEquals(15, calculator.add(line));
+    }
+
+    @Description("커스텀 구분자")
+    @Test
+    void customString() {
+        String line = "//;\n1;2;3;4;5";
+        assertEquals(15, calculator.add(line));
+    }
+
+    @Description("음수 RuntimeException")
+    @Test
+    void notPositiveString() {
+        String line = "-1, -2, 3, 4, 5";
+        assertThrows(RuntimeException.class, () -> calculator.add(line));
+    }
+
+    @Description("Add")
+    @Test
+    void add() {
+        String line = "//;\n1;2;3";
+//      String line = "1,2:3";
+        assertEquals(6, calculator.add(line));
+    }
+}
+```
