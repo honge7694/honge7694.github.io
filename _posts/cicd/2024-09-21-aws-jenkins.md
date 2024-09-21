@@ -54,6 +54,27 @@ hooks: # 배포 중에 실행될 스크립트들을 정의
 > 이 파일에 따라 EC2 인스턴스에서 `deploy.sh`이 실행된다.    
 {: .prompt-info }
 
+### [ERROR] Code-Deploy install No such file or directory 발생
+
+No such file or directory @ rb_sysopen - /opt/codedeploy-agent/deployment-root/931efd8f-fcbb-4405-98f0-ded45012a93d/d-3W1IX6NL7/deployment-archive/code-deploy    
+
+나는 build 된 파일을 S3 bucket/code-deploy/에 위치하게 했는데 code-deploy에서도 source를 /가 아닌 /code-deploy로 생각해서 배포가 실패하여 삽질을 오래했다.    
+에러를 해결하게 된 방향은 에러가 발생한 /opt/codedeploy-agent~~ 를 EC2 인스턴스에서 접속해서 알게되었다.     
+
+위의 경로를 하나하나 파악해 봤다.
++ /opt/codedeploy-agent/deployment-root/ : CodeDeploy 에이전트가 배포 작업 중 사용하는 기본 경로
++ 931efd8f-fcbb-4405-98f0-ded45012a93d (랜덤한 UUID): 배포 ID를 의미하며, 각 배포마다 고유한 폴더 이름이 할당된다.
++ d-3W1IX6NL7 (또 다른 배포 관련 디렉터리): 실제 배포 과정에서 생성된 일시적인 폴더로, **배포작업이 진행되는 동안 CodeDeploy Agent가 파일을 이곳에 저장하고 관리**한다.
++ deployment-archive : S3에서 내려받은 애플리케이션 파일들을 저장하는 공간
+
+나는 `appspec.yml` files: - source: /code-deploy로 작성하여 S3에서 내려받은 애플리케이션 파일이 있는 deployment-archive보다 depth를 더 깊게 들어가 code-deploy를 바라보는 실수를 했다. 
+
+```ubuntu
+ubuntu@ip-172-31-12-117:/opt/codedeploy-agent/deployment-root/931efd8f-fcbb-4405-98f0-ded45012a93d/d-Y1T727NL7/deployment-archive$ ls
+Dockerfile  appspec.yml  build  deploy.sh  gradle
+```
+
+
 ## 5. EC2 인스턴스에서 배포 작업 수행
 
 `deploy.sh` 스크립트가 EC2 인스턴스에서 실행된다.
@@ -103,13 +124,12 @@ fi
 
 ```
 
-### [ERROR] COPY failed: file not found in build context or excluded by .dockerignore: stat cms-0.0.1-SNAPSHOT.jar: file does not exist
-
-여기서 `cp /home/ubuntu/build/libs/${JAR_FILE} .`를 이용하여 JAR 파일을 현재 디렉토리로 복사하는 것을 안해서 CodeDeploy에서 배포를 실패했다.     
-이 코드를 작성하는 이유는 Dockerfile이 실행될 때 실행 할 디렉토리에서 필요한 파일이 존재해야하기 때문이다.
-
-
 > **deploy.sh 파일은 무엇일까??**    
 > 기존에 실행 중인 Docker 컨테이너를 중지 및 삭제, 새로운 컨테이너 실행.    
 > Docker 이미지 빌드 : `DockerFile`을 사용하여 새로운 Docker 이미지를 빌드한다.
 {: .prompt-info }
+
+### [ERROR] COPY failed: file not found in build context or excluded by .dockerignore: stat cms-0.0.1-SNAPSHOT.jar: file does not exist
+
+여기서 `cp /home/ubuntu/build/libs/${JAR_FILE} .`를 이용하여 JAR 파일을 현재 디렉토리로 복사하는 것을 안해서 CodeDeploy에서 배포를 실패했다.     
+이 코드를 작성하는 이유는 Dockerfile이 실행될 때 실행 할 디렉토리에서 필요한 파일이 존재해야하기 때문이다.
