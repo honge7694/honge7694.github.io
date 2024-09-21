@@ -32,7 +32,7 @@ version: 0.0
 os: linux
 
 files: # S3에서 EC2로 파일을 복사하는 부분을 정의
-  - source: /code-deploy
+  - source: /
     destination: /home/ubuntu # S3에서 파일을 EC2로 복사할 위치
     overwrite: yes
 
